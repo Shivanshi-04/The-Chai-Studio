@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#ffdbcb",
+          "on-secondary-fixed": "#341100",
+          "on-tertiary-fixed-variant": "#604021",
+          "error-container": "#93000a",
+          "tertiary-fixed": "#ffdcc0",
+          "on-error-container": "#ffdad6",
+          "surface-dim": "#1c110c",
+          "primary": "#fdb96e",
+          "surface-container": "#291d17",
+          "on-error": "#690005",
+          "primary-container": "#d99a52",
+          "surface-container-highest": "#40322c",
+          "tertiary-fixed-dim": "#edbd95",
+          "on-tertiary-container": "#543517",
+          "inverse-on-surface": "#3b2d27",
+          "surface-container-low": "#251914",
+          "on-surface": "#f5ded5",
+          "tertiary": "#edbd95",
+          "on-secondary-fixed-variant": "#73350f",
+          "surface": "#1c110c",
+          "on-tertiary": "#462a0d",
+          "secondary-fixed-dim": "#ffb690",
+          "error": "#ffb4ab",
+          "on-primary-container": "#593400",
+          "on-primary": "#482900",
+          "on-tertiary-fixed": "#2d1600",
+          "background": "#1c110c",
+          "on-primary-fixed": "#2b1700",
+          "surface-container-high": "#342721",
+          "outline": "#9e8e7f",
+          "primary-fixed": "#ffdcbb",
+          "tertiary-container": "#ca9e78",
+          "inverse-surface": "#f5ded5",
+          "on-secondary": "#552100",
+          "surface-tint": "#fdb96e",
+          "surface-variant": "#40322c",
+          "primary-fixed-dim": "#fdb96e",
+          "surface-container-lowest": "#160c07",
+          "surface-bright": "#443630",
+          "secondary-container": "#73350f",
+          "on-secondary-container": "#f7a071",
+          "inverse-primary": "#85530f",
+          "on-surface-variant": "#d6c3b3",
+          "outline-variant": "#514538",
+          "on-primary-fixed-variant": "#673d00",
+          "on-background": "#f5ded5",
+          "secondary": "#ffb690"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "margin-mobile": "1.25rem",
+          "margin-tablet": "2rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin": "3rem",
+          "gutter-mobile": "1rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg-mobile": [
+            "38px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col justify-between"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_12px_32px_-8px_rgba(15,8,5,0.75)]"><div class="h-20 max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="The Chai Studio Logo" class="w-10 h-10 rounded-full object-cover shadow-[0_0_12px_rgba(217,154,82,0.25)]" src="https://lh3.googleusercontent.com/aida/AEtjO1U6tG1ZaMElf4LLnFSkAw1jFp2nPjqPoF768UYFJ7MWSkHLYe1rWWdD5Qok7g1_mbj122QWRVb0usr1eRdFUmtTfl7XUmnST_z8d7F8TD4mxQYobmeaHcBX9yVMprhGUlYltmWRIoPmuWhSNiwWnZ9g0yCZnFOSykrhpVIvCRlks4Pm7fhKaBHyuKztrv6pAoykPE52MMsf4JBE6xC_4vgAOLTGhZljmQynyMIPvYqw85RhHB4nTSJzdSDz0mC8XZ82G5VTyofVgvQ"/><div class="flex flex-col"><span class="font-title-lg text-title-lg text-on-surface tracking-wider uppercase font-semibold">THE CHAI STUDIO</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase opacity-90">CHAI ON CLICKS</span></div></div><nav class="hidden md:flex items-center gap-space-xl" data-active-classes="text-primary font-bold shadow-[0_2px_0_0_#fdb96e]"><a aria-current="page" class="transition-all duration-300 py-space-xs text-primary font-bold shadow-[0_2px_0_0_#fdb96e]" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 py-space-xs" data-path="menu" href="#">Menu</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 py-space-xs" data-path="our-story" href="#">Our Story</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 py-space-xs" data-path="gallery" href="#">Gallery</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-all duration-300 py-space-xs" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center font-label-md text-label-md text-on-surface hover:text-primary transition-colors py-space-sm px-space-md" data-path="visit-us" href="#">Visit Us</a><a class="inline-flex items-center justify-center font-label-lg text-label-lg bg-primary-container text-on-primary-container px-space-lg py-space-sm rounded-full shadow-[0_0_16px_rgba(217,154,82,0.25)] hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300" data-path="order-now" href="#">Order Now</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40 shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1U6tG1ZaMElf4LLnFSkAw1jFp2nPjqPoF768UYFJ7MWSkHLYe1rWWdD5Qok7g1_mbj122QWRVb0usr1eRdFUmtTfl7XUmnST_z8d7F8TD4mxQYobmeaHcBX9yVMprhGUlYltmWRIoPmuWhSNiwWnZ9g0yCZnFOSykrhpVIvCRlks4Pm7fhKaBHyuKztrv6pAoykPE52MMsf4JBE6xC_4vgAOLTGhZljmQynyMIPvYqw85RhHB4nTSJzdSDz0mC8XZ82G5VTyofVgvQ"/></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. CINEMATIC HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest">
+<!-- Atmospheric Ambient Glows -->
+<div class="pointer-events-none absolute -top-40 right-1/4 h-[580px] w-[580px] rounded-full bg-primary/10 blur-[140px]"></div>
+<div class="pointer-events-none absolute top-1/2 -left-20 h-96 w-96 rounded-full bg-secondary-container/20 blur-[120px]"></div>
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Left Column (45% / 5 cols + offset) -->
+<div class="lg:col-span-5 flex flex-col justify-center gap-space-lg">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-sm self-start px-space-md py-space-xs rounded-full bg-surface-container-high/90 shadow-sm backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">CRAFTED WITH WARMTH · SERVED WITH SOUL</span>
+</div>
+<!-- Master Headline -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-headline-lg lg:text-[54px] lg:leading-[1.12] text-on-surface tracking-tight font-serif">
+            Every Cup Has A Little <span class="italic text-primary font-normal drop-shadow-[0_2px_18px_rgba(253,185,110,0.35)]">Magic.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mt-space-sm leading-relaxed">
+            From comforting kulhad chai to indulgent cold coffee, discover your next favourite sip at <span class="text-on-surface font-semibold">The Chai Studio</span>.
+          </p>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="group inline-flex items-center gap-space-sm px-space-xl py-space-md rounded-full bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-[0_0_24px_rgba(253,185,110,0.3)] hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300" data-path="menu" href="#">
+<span>Explore Our Menu</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">east</span>
+</a>
+<a class="inline-flex items-center px-space-lg py-space-md rounded-full bg-surface-container-high/80 text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors" data-path="our-story" href="#">
+            Discover Our Story
+          </a>
+</div>
+<!-- Artisan Micro-Badge -->
+<div class="flex items-center gap-space-md pt-space-md border-t border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold tracking-wider uppercase">BREWED FRESH. SERVED WITH LOVE.</span>
+<span class="font-body-sm text-body-sm text-outline">Steamed fresh every 15 minutes with crushed cardamom &amp; adrak.</span>
+</div>
+</div>
+</div>
+<!-- Right Column (55% / 7 cols) Dominant Cinematic Visual -->
+<div class="lg:col-span-7 relative flex justify-center items-center">
+<!-- Ambient radial glow behind the pot -->
+<div class="absolute inset-0 m-auto w-3/4 h-3/4 bg-gradient-to-tr from-secondary-container/40 via-primary/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative w-full max-w-[580px] rounded-3xl overflow-hidden shadow-[0_24px_64px_-16px_rgba(10,5,3,0.95)] bg-surface-container-low group">
+<img class="w-full h-[520px] lg:h-[600px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="An ornate traditional Indian brass kettle with hand-painted peacock and elephant motifs pouring steaming hot masala chai with rich froth into a rustic earthen terracotta kulhad cup. Surrounding the base are whole spices like cinnamon sticks, star anise, cloves, and cracked green cardamom pods on a dark textured wooden table with rising swirling steam and dramatic warm chiaroscuro amber rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-kvPW_m9Ah__E7a8mvLbeH7C7fd_pm7KcW2RA2CtzPPkGuzjHm5Uk-J6jOxS4iFwfbM7Ne2pPVw-4fk6-iqO5lsU_LNc3QkDG-hnEYuZxyxTmGAor7TqkM7QYUL8xG9tLf6-k69WAMCFJu2VRJjTSOx3idqOaAcCbRmzBOiuwguY4h4Z5IAdTtr9nUiSo-FV_tIZVpyeq4Icd-TFra0STeiBXK2v4sPi8eEabzYF1P8T5PbqhllIErw"/>
+<!-- Radial Vignette Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-black/20 pointer-events-none"></div>
+<!-- Floating Micro Card -->
+<div class="absolute bottom-6 left-6 right-6 p-space-md bg-surface-container/90 backdrop-blur-xl rounded-2xl shadow-xl flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">coffee</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Smoky Matka &amp; Kulhad Chai</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-secondary text-[10px] font-bold uppercase tracking-wider">Signature</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Hand-brewed with fresh whole spices, slow-simmered over charcoal embers.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. SIGNATURE MENU PREVIEW -->
+<section class="w-full py-space-xl lg:py-24 bg-surface">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">FROM OUR KITCHEN</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Your Cravings, Our Craft.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">From timeless spiced chai to chilled artisanal brews and hot savouries, crafted for every mood.</p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-secondary transition-colors group" data-path="menu" href="#">
+<span>Explore Full Digital Menu</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Categories Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: Masala & Kulhad Chai -->
+<div class="group relative flex flex-col rounded-2xl bg-surface-container-low overflow-hidden hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisanal clay kulhad cups filled to the brim with frothy Indian masala chai, scattered crushed cardamom pods, and star anise resting on an old dark slate surface in warm golden lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOHT3CgPr6bKLUmO5OAHYVgzJgK1G3FDpqFgjwGqWh93TdbFSdknSxPmGBRGgqNpFJsQ_xF887oUl8_LT_03w-8r0uWq0nHLdiAwBdklgF0UM2ZX94jBhJ6CWgx4oeAT_RtRdbXKs332r6y9lCmowcd4VvmKYUkZttg5_ZUYF5556JnQJWd-c_VIMFb6rWNLxUt7LJTbEcsqZarGaP9ZPHeJRhsK7Aq68GGMfzhM5MG6-bWHMu8IwmIg"/>
+<span class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">From ₹35</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Masala &amp; Kulhad Chai</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Earthen clay cups infused with natural terracotta notes, crushed ginger, and whole cardamom.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">8 Varieties Available</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:translate-x-0.5 transition-transform">north_east</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Cold Coffee & Cream Shakes -->
+<div class="group relative flex flex-col rounded-2xl bg-surface-container-low overflow-hidden hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A tall glass of thick iced cold coffee topped with a swirl of velvety whipped cream, chocolate drizzle, and roasted coffee beans in a modern dark café setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjuJc3v4gZpZCgZoGxp6GsltkKZGDDyGamiWuNktwxDw-JA3siawk2HeiZ2fn3tdE_f-5jBeL_XgvdY4z3ngkvI8b4FEVlKlztg06bIfxixhPmGGzMV-61nEelaDqU_wQRitVNZ-vxBVUl9uHNl3nF8NfU7PSD5PIlj1h49cDwoMS57SqAxXO1agwwX2aiySVwi9_hBmGiKysxDGRNRYDs2K_faTGRuXpz8g8hlAXk92MvIqeHkza22A"/>
+<span class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">From ₹90</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Cold Coffee &amp; Cream Shakes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Slow-drip espresso blends blended with creamy whole milk, artisanal vanilla, and dark mocha.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Decadent &amp; Thick</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:translate-x-0.5 transition-transform">north_east</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Flavoured Hot Brews -->
+<div class="group relative flex flex-col rounded-2xl bg-surface-container-low overflow-hidden hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Clear glass teacup featuring amber-colored saffron and rose herbal tea brew with floating edible rose petals, saffron threads, and whole cloves in soft mood lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTruc55rLwDkgqAkk-Kc1NcmVnfGCjkk8BwIgDpAZibLErRmBBWyVLMqPY6G3Lsg0BFx20MJ8Abs1ifMO6qiw0lbvEEs4Z3f-T0ailWxSxzQM7D5G2x9JA9XMiQGc90IaIWSvo_iNsVEjp95nLA8xE4b0oI9N06GhDxS_Rz60lGdzjHARs4xo4Fo_A2fkuwZHegrbtu7DXKuSYeT_8Ccq8fAz-FyUFLDg6MYqDTShfd8721wnhMk1ABQ"/>
+<span class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">From ₹45</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Flavoured Hot Brews</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Kashmiri Kahwa, Saffron Elachi, Chamomile Zing, and Green Tea herbal infusions.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Herbal &amp; Pure</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:translate-x-0.5 transition-transform">north_east</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Double Masala Maggi & Munchies -->
+<div class="group relative flex flex-col rounded-2xl bg-surface-container-low overflow-hidden hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A steaming hot ceramic bowl of double masala noodles garnished with fresh coriander, diced green chilies, grated cheese, and sweet corn on a dark wood background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPVttm8I1YbyUk3OkEFUKFMxM_C_myru2gWR7fDYRyhP4XxDCrTPgh3GCyCYaFX1jdppj3ixeQgbzSFjRv-AyBdMZqeMpIB0kgoiDDLjYttInwAsOm0QER7Jb7v5_vo_Xx3bq-ie5MTCJxhkGXzwr_GRBB9LAjWW2t4nZPRb66CR1I1hjRK5O5khjmnSe3dVu7LXJy1QKyTkq8yWdh2hZf9Bpniv-xkua206FI3-iAddGGd2HQbRlvkA"/>
+<span class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">From ₹50</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Double Masala Maggi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Street-style soul food spiced to perfection with secret podi seasoning and melty cheese.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Café Favourite</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:translate-x-0.5 transition-transform">north_east</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Gourmet Pizzas & Burgers -->
+<div class="group relative flex flex-col rounded-2xl bg-surface-container-low overflow-hidden hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A freshly baked thin crust pizza slice with melted stringy mozzarella cheese, fresh basil, and spiced paneer next to loaded crispy potato wedges in warm rustic ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgzOcwfClYfiltzj4RcqY9PD5KaIJgKCFnstSlMSzzEV96BSHBFggxB4C5InDPvX6Jlu0doHspu-uriWiSt0U04wC9mMM9VCH7CN1aT9cuPvxiwvuyHlDi8jPQEflkg0GHXvw1uz7a06wx0Wa9GBy4mmBwNXko0Gkv5R9XYdFTL9RNZR1nNORiRjOLz3iY7Q-1Bw5EvhEdEm1_LTBR_mTLRbsrq-Zhq5FwwBSlHvwDlKbHI_o2J2Ajjw"/>
+<span class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">From ₹70</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Gourmet Pizzas &amp; Burgers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Crisp hand-stretched dough, roasted garlic sauces, house burger patties, and seasoned fries.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Freshly Baked</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:translate-x-0.5 transition-transform">north_east</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Refreshing Mocktails & Slushes -->
+<div class="group relative flex flex-col rounded-2xl bg-surface-container-low overflow-hidden hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vibrant icy blue lagoon mocktail and fresh mint mojito with lime wheels and crushed ice in condensation-covered glasses against a warm backlit café bar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyrseaI-C6AjWJ2U1R9Qf_GgxoApWAiMhn8U8qFv3WtLJWP1m2uqE-UtDvMmv7oqgJaAEd4aGlbLRrImmAWPoaDHEEGXxsb6hEvMjETXChwZ3z8x7hkfwCfoaD99ihln60u1jUYgDbai6ovDJxwT4xK1HmS6yt0amOL-bGf-7SdAi2Inr2enmZNKiJiny5EahKrKDPOnYAjw1feYjPYWEIkyNuJn1IDyShSg_M5HZzDfSq6JG1IGj8Jg"/>
+<span class="absolute top-3 right-3 px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold">From ₹90</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface group-hover:text-primary transition-colors">Refreshing Mocktails &amp; Slushes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sparkling coolers with crushed mint, zesty kaffir lime, berries, and Himalayan rock salt.</p>
+</div>
+<div class="flex items-center justify-between pt-space-sm mt-space-sm border-t border-outline-variant/20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Cool &amp; Crisp</span>
+<span class="material-symbols-outlined text-primary text-[18px] group-hover:translate-x-0.5 transition-transform">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. BRAND STORY & SIGNATURE RITUAL (Combined Split Section) -->
+<section class="w-full py-space-xl lg:py-24 bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Narrative Column (6 cols) -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">ROOTED IN TRADITION. MADE FOR TODAY.</span>
+<h2 class="font-headline-lg lg:text-[42px] leading-tight text-on-surface font-serif">More Than Chai. It's a Feeling.</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Inspired by India's timeless love for chai, <span class="text-on-surface font-semibold">The Chai Studio</span> brings comforting cups, refreshing sips, and café favourites together in one welcoming space. Handcrafted kulhads, slow-brewed tea leaves, crushed ginger, and aromatic whole spices meet contemporary street culture.
+        </p>
+<!-- Value Pillars -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">eco</span>
+<span class="font-title-md text-title-md text-on-surface">100% Whole Spices</span>
+<span class="font-body-sm text-body-sm text-outline">Never powders or artificial syrups.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">potted_plant</span>
+<span class="font-title-md text-title-md text-on-surface">Terracotta Kulhad</span>
+<span class="font-body-sm text-body-sm text-outline">Natural earthen aroma in every single pour.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">restaurant</span>
+<span class="font-title-md text-title-md text-on-surface">Fresh Café Comforts</span>
+<span class="font-body-sm text-body-sm text-outline">Prepared made-to-order every time.</span>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-secondary transition-colors group" data-path="our-story" href="#">
+<span>Read our complete story</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">east</span>
+</a>
+</div>
+</div>
+<!-- Visual Composition (6 cols) -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full h-[460px] rounded-3xl overflow-hidden shadow-2xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A master tea artisan in a warm ambient kitchen carefully pouring piping hot spiced tea from an elevated copper vessel into smoking natural clay cups surrounded by warm glowing kitchen embers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1gbFvVLg-vlPQ_WBUBYMaxJoV-MYP9j9qEdGX2kULnzadVfbSM8Xkc2kCVvrch-ubx-R-RigD8I5RNwseheGBfLTwSc_UcOVv0_7SH0QRSV8IPvLAXMoxJiCMUKGRcKIPGTqSmZvkUI3dHghDC-dG1LcUCfQnH4w8jzE1RTCQwZcox1EoSd8YUBG_PM1FK-f-Iud1fEPhnWS-ui8R1x5HlRnntjbHbNzU_kBbm1Ji5i6lR5hH3rXz5w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Glass Floating Badge -->
+<div class="absolute bottom-6 left-6 right-6 p-space-md rounded-2xl bg-surface-container-highest/80 backdrop-blur-lg flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Fresh Batches Every 15 Mins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Unadulterated full-cream milk &amp; high-altitude Assam leaf.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. CAFÉ AMBIENCE & HIGHLIGHTS GALLERY -->
+<section class="w-full py-space-xl lg:py-24 bg-surface">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Title -->
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">THE STUDIO ATMOSPHERE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Warm Lights, Good Vibes.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Step in for a quiet solo sip, an evening catch-up with friends, or late-night study chai.</p>
+</div>
+<!-- Bento Grid (4 photos) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Bento 1: Featured Tall Card (7 cols) -->
+<div class="md:col-span-7 relative h-80 md:h-[420px] rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Overhead close-up of piping hot artisanal Masala Kulhad Chai with rich foam surrounded by whole cinnamon rolls, green cardamom pods, and star anise on dark mahogany wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0485fe4yLHhW-4t1oBXE7rVQQUumAPo8uT7tXv7M9iQh7OmS6bN2JKAv1xrEwZPI4PNh3zqwH6gU_vo821GmviFJdq-a-hlkpCNLGxngfLslgq8QEtkImYp5582wYPPfJ53qU1y6OYSsGne5jZ7rVzjy6yX__5xMmFnEM4-j8LuIDhHHL9tpaQONAiIUxUeqyqEEfyiK-YO7SUc7kTr9g6dnNg8T3flZaYyX7xcPi44HpRQcShCgzqg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Classic Ritual</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Steaming Kulhad Chai</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Infused with roasted cinnamon &amp; green cardamom</p>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">₹40</span>
+</div>
+</div>
+<!-- Bento 2: Right Top (5 cols) -->
+<div class="md:col-span-5 relative h-80 md:h-[420px] rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artisan cold coffee in a heavy glass mug crowned with chocolate whipped cream and dark cocoa sprinkles on an amber-lit cafe marble table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeYQne73lq7nSDKWnrrNdP8lPNVn2pCSA_zhE-1ikGp_qYXWLxMVBXJf9uxzkMcx5S4OOyLF7tkd-PzBf9DPh_0K87BgZvbnD_o-4M0BG6nAQmiGKcR_2hTv_zVZzg0kbbr2pBcNaNmGCIkGkajLoYhWn3Xr47XkC6I_Sz0SwmmCBeETXIUmF0_FaMUeFem37MaujTbJyGG7HtxWlXwh0PqykfVDu4ytht2TMNmCAf-MHVtoNOOHc3xg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Chilled Sips</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Whipped Cold Coffee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dark mocha infusion with silky cream</p>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">₹110</span>
+</div>
+</div>
+<!-- Bento 3: Bottom Left (5 cols) -->
+<div class="md:col-span-5 relative h-72 rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sizzling cheesy double masala Maggi noodles served in an artisanal terracotta bowl with chopped chilies and melting melted mozzarella." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLDIi9KYnyZMBvTeXR7n5JkB7s9naorC2xib5XM0UnSMM2vmt-1qrL_2pfiFSsueGyxzUiiVuFZuWNGWJGGutjEYHdTvu2S1ILsWd9jO7Rg1w1Mu__ERUd-yCoMQaCnDTxS-7MBI_2OrftUuSQkk0yL46QwdONmXAc4mWSSsURmjklZel3hgDPd9kwcut2kObaZs6GFm4ZcHB5Hub7GKuMsd8CO8VM0XvqMn1DtrYQYZswU_sF6KaUcA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Midnight Craving</span>
+<h4 class="font-title-lg text-title-lg text-on-surface">Cheesy Tandoori Maggi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">House blend tadka seasoning</p>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">₹75</span>
+</div>
+</div>
+<!-- Bento 4: Bottom Right (7 cols) -->
+<div class="md:col-span-7 relative h-72 rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crispy freshly baked artisanal pizza slice with charred crust and stretch cheese next to golden seasoned peri-peri potato fries on a dark presentation paddle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbh9PoVxlLqttz9TqyHT9APMkEcS2ehL0wYs-wfiaERVl83JEmM7AJ1h1eZm0-nwmaUgkYGSctTYTmobGMecVAsGH6LJ9S5x6qkwvygunnjHOGbGqXPdmmtXEJVs-IQ8bfBSqJ4EAnklPTVkQCd2H-Is4ap7rB5k2Cdnyu-sLKsPnSmDXsJehZ5GGgqEWS4U3cLx7rTsVdtdpbgWyISvJQUCuj_86qAG_f_C2sM4s3p1jeVTerlmYIIQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Oven &amp; Grill</span>
+<h4 class="font-title-lg text-title-lg text-on-surface">Crispy Crust Pizza &amp; Fries</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hand-stretched with fresh mozzarella &amp; herbs</p>
+</div>
+<span class="font-title-md text-title-md text-primary font-semibold">₹149</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. COMPACT VISIT & CONTACT BAR -->
+<section class="w-full py-space-lg bg-surface-container-low">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="p-space-lg lg:p-space-xl rounded-3xl bg-surface-container flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-xl">
+<!-- Left info -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Open Daily</span>
+<span class="font-title-md text-title-md text-on-surface">10:00 AM – 11:30 PM</span>
+</div>
+</div>
+<div class="hidden sm:block h-8 w-px bg-outline-variant/40"></div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">photo_camera</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Tag Us on Instagram</span>
+<span class="font-title-md text-title-md text-on-surface">@thechaistudioindresh</span>
+</div>
+</div>
+</div>
+<!-- Right Quick Actions -->
+<div class="flex items-center gap-space-md w-full lg:w-auto">
+<a class="flex-1 lg:flex-none inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-colors" data-path="contact" href="#">
+<span class="material-symbols-outlined text-[18px]">navigation</span>
+<span>Get Directions</span>
+</a>
+<a class="flex-1 lg:flex-none inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-[0_0_16px_rgba(253,185,110,0.25)]" href="tel:+911149823310">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Café</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface pt-space-xl pb-space-lg"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><img alt="The Chai Studio Emblem" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1U6tG1ZaMElf4LLnFSkAw1jFp2nPjqPoF768UYFJ7MWSkHLYe1rWWdD5Qok7g1_mbj122QWRVb0usr1eRdFUmtTfl7XUmnST_z8d7F8TD4mxQYobmeaHcBX9yVMprhGUlYltmWRIoPmuWhSNiwWnZ9g0yCZnFOSykrhpVIvCRlks4Pm7fhKaBHyuKztrv6pAoykPE52MMsf4JBE6xC_4vgAOLTGhZljmQynyMIPvYqw85RhHB4nTSJzdSDz0mC8XZ82G5VTyofVgvQ"/><div class="flex flex-col"><span class="font-title-lg text-title-lg text-on-surface tracking-wide uppercase">THE CHAI STUDIO</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">CHAI ON CLICKS</span></div></div><p class="font-body-sm text-body-sm text-on-surface-variant italic">“BREWED FRESH. SERVED WITH LOVE.”</p><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">alternate_email</span><span class="font-label-md text-label-md hover:text-primary transition-colors cursor-pointer">@thechaistudioindresh</span></div></div><div class="flex flex-col gap-space-md"><h3 class="font-title-md text-title-md text-primary tracking-wider uppercase">Quick Navigation</h3><div class="flex flex-col gap-space-sm"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Artisanal Home</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#">Signature Brews &amp; Kulhads</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-story" href="#">Generational Heritage</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="gallery" href="#">Tasting Room Gallery</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Studio Inquiries</a></div></div><div class="flex flex-col gap-space-md"><h3 class="font-title-md text-title-md text-primary tracking-wider uppercase">Opening Hours</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex justify-between"><span class="text-on-surface">Monday – Friday:</span><span>07:00 AM – 11:00 PM</span></div><div class="flex justify-between"><span class="text-on-surface">Saturday – Sunday:</span><span>08:00 AM – 12:00 AM</span></div><p class="text-primary font-label-sm text-label-sm pt-space-xs tracking-wider uppercase">Fresh Kadak Infusions Daily</p></div></div><div class="flex flex-col gap-space-md"><h3 class="font-title-md text-title-md text-primary tracking-wider uppercase">The Studio</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">location_on</span><span>Heritage Lane, Civil Lines, Near Indresh Square, New Delhi, 110054</span></div><div class="flex items-center gap-space-xs mt-space-xs"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span>+91 (0) 11 4982 3310</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-md text-label-md text-on-surface-variant"><p class="text-center md:text-left">THE CHAI STUDIO — CHAI ON CLICKS © 2024. All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors" data-path="privacy" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="terms" href="#">Terms of Service</a><a class="hover:text-primary transition-colors" data-path="contact" href="#">Location &amp; Directions</a></div></div></div></footer></body></html>

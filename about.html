@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | The Chai Studio — Chai on Clicks Dehradun</title>
+  <meta name="description"
+    content="Learn about The Chai Studio, Dehradun. Our slow-simmered philosophy, unglazed terracotta kulhad tradition, mountain tea heritage, and the sanctuary we built for chai lovers." />
+  <meta name="theme-color" content="#1c110c" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <!-- Tailwind CDN & Config matching DESIGN.md -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#fdb96e",
+            "primary-container": "#d99a52",
+            "on-primary": "#482900",
+            "secondary": "#ffb690",
+            "secondary-container": "#73350f",
+            "on-secondary-container": "#f7a071",
+            "tertiary": "#edbd95",
+            "surface": "#1c110c",
+            "on-surface": "#f5ded5",
+            "on-surface-variant": "#d6c3b3",
+            "outline": "#9e8e7f",
+            "outline-variant": "#514538",
+            "surface-container-lowest": "#160c07",
+            "surface-container-low": "#251914",
+            "surface-container": "#291d17",
+            "surface-container-high": "#342721",
+            "surface-container-highest": "#40322c"
+          },
+          fontFamily: {
+            "serif": ["Playfair Display", "serif"],
+            "cinzel": ["Cinzel", "serif"],
+            "sans": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="about-page-body bg-[#1c110c] text-on-surface antialiased selection:bg-primary-container selection:text-on-primary">
+
+  <!-- Top Native/CSS Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Sticky Luxury Navigation Header -->
+  <header class="studio-header" id="navbar">
+    <div class="header-container">
+      <a href="/index.html" class="brand-logo" aria-label="The Chai Studio Home">
+        <div class="logo-symbol">
+          <img src="/logo.jpg" alt="The Chai Studio Emblem" class="brand-logo-img" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-main font-cinzel">THE CHAI STUDIO</span>
+          <span class="logo-tag">CHAI ON CLICKS</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="/index.html" class="nav-btn">Home</a>
+        <a href="/menu.html" class="nav-btn">Menu</a>
+        <a href="/story.html" class="nav-btn">Our Story</a>
+        <a href="/about.html" class="nav-btn active">About</a>
+        <a href="/contact.html" class="nav-btn">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-quick-order" class="btn-primary">
+          <span>Order Kulhad</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN ABOUT CONTENT WRAPPER -->
+  <main class="w-full">
+
+    <!-- 1. HERO NARRATIVE SECTION -->
+    <section class="about-hero-section text-center">
+      <div class="max-w-4xl mx-auto flex flex-col items-center gap-5 relative z-10">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest shadow-md">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          <span>Artisanal Mountain Sanctuary • Dehradun</span>
+        </div>
+
+        <h1 class="font-cinzel text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#fff4e3] tracking-tight leading-tight">
+          A Sanctorum for Chai Lovers, Thinkers &amp; Seekers
+        </h1>
+
+        <p class="font-serif italic text-lg sm:text-xl text-primary max-w-2xl leading-relaxed">
+          “In the Himalayan foothills, we built a place where time slows down, steam ascends, and every earthen kulhad tells a story.”
+        </p>
+
+        <p class="text-sm sm:text-base text-on-surface-variant max-w-2xl leading-relaxed">
+          The Chai Studio was founded on a simple conviction: tea is not merely a morning habit or a paper-cup commodity. It is a soulful ritual of connection, grounded in the aroma of unglazed mountain clay, fresh stone-ground spices, and unhurried human warmth.
+        </p>
+
+        <!-- Quick Heritage Badges -->
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <span class="stat-pill">
+            <span class="material-symbols-outlined text-[18px]">potted_plant</span>
+            <span>100% Biodegradable Kulhads</span>
+          </span>
+          <span class="stat-pill">
+            <span class="material-symbols-outlined text-[18px]">skillet</span>
+            <span>12-Min Slow Simmer</span>
+          </span>
+          <span class="stat-pill">
+            <span class="material-symbols-outlined text-[18px]">eco</span>
+            <span>Zero Synthetic Flavour Drops</span>
+          </span>
+          <span class="stat-pill">
+            <span class="material-symbols-outlined text-[18px]">menu_book</span>
+            <span>Community Reading Library</span>
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. VIRTUAL CAFÉ CORNERS WALKTHROUGH -->
+    <section class="py-16 px-4 md:px-8 max-w-[1320px] mx-auto">
+      <div class="flex flex-col gap-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div class="flex flex-col gap-2 max-w-2xl">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Spatial Architecture &amp; Vibe</span>
+            <h2 class="font-cinzel text-2xl sm:text-3xl md:text-4xl text-[#fff4e3] font-bold">
+              Explore Our Dehradun Haven
+            </h2>
+            <p class="text-sm text-on-surface-variant">
+              Click the interactive pins on our studio photo to tour our hand-carved teak counters, steaming samovar station, and cozy book library.
+            </p>
+          </div>
+          <div class="text-xs text-primary/80 font-mono flex items-center gap-1.5 bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20 w-fit">
+            <span class="material-symbols-outlined text-[16px]">touch_app</span>
+            <span>Click any glowing pin to reveal details</span>
+          </div>
+        </div>
+
+        <!-- Interactive Hotspot Photo Container -->
+        <div class="relative w-full rounded-2xl md:rounded-3xl overflow-hidden border border-primary/30 shadow-[0_20px_60px_rgba(0,0,0,0.8)] bg-[#120a06]">
+          <img src="/about-cafe.jpg" alt="The Chai Studio Dehradun Cafe Interior" class="w-full h-auto object-cover min-h-[380px] md:min-h-[500px] max-h-[640px] brightness-[0.92]" />
+
+          <!-- Gradient Vignette -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#160c07] via-transparent to-black/30 pointer-events-none"></div>
+
+          <!-- Hotspot 1: The Samovar Station (Left Counter) -->
+          <button class="hotspot-pin active" style="top: 48%; left: 39%;" data-spot="samovar" aria-label="Samovar Hearth Hotspot">
+            <span class="hotspot-pulse"></span>
+          </button>
+
+          <!-- Hotspot 2: Reading Corner & Bookshelf (Right Back) -->
+          <button class="hotspot-pin" style="top: 68%; right: 22%;" data-spot="bookshelf" aria-label="Bookshelf Nook Hotspot">
+            <span class="hotspot-pulse"></span>
+          </button>
+
+          <!-- Hotspot 3: The Unglazed Kulhad Stack (Center Counter) -->
+          <button class="hotspot-pin" style="top: 54%; left: 47%;" data-spot="kulhads" aria-label="Terracotta Kulhad Hotspot">
+            <span class="hotspot-pulse"></span>
+          </button>
+
+          <!-- Hotspot 4: The Discussion Tables (Foreground Left) -->
+          <button class="hotspot-pin" style="top: 80%; left: 24%;" data-spot="tables" aria-label="Teakwood Tables Hotspot">
+            <span class="hotspot-pulse"></span>
+          </button>
+
+          <!-- Dynamic Hotspot Bottom Floating Banner -->
+          <div id="hotspot-details-banner" class="absolute bottom-4 left-4 right-4 md:left-8 md:right-8 bg-[#160c07]/95 backdrop-blur-md border border-primary/30 rounded-xl md:rounded-2xl p-4 md:p-6 shadow-2xl transition-all duration-300 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-primary/20 border border-primary/40 flex items-center justify-center text-primary shrink-0" id="spot-icon">
+                <span class="material-symbols-outlined text-[26px]">skillet</span>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-bold uppercase tracking-wider text-primary" id="spot-tag">Featured Craft Station</span>
+                  <span class="text-[11px] text-on-surface-variant/80 font-mono">• Active Feature</span>
+                </div>
+                <h3 class="font-cinzel text-lg md:text-xl font-bold text-[#fff4e3]" id="spot-title">The Copper Samovar &amp; Kadak Hearth</h3>
+                <p class="text-xs md:text-sm text-on-surface-variant mt-1 leading-relaxed" id="spot-desc">
+                  Our custom beaten-copper samovar gently simmers water infused with whole ginger and crushed green cardamom all day. When your order is placed, full-cream mountain milk and Assam orthodox tea leaves are united in a hand-held pan for a vigorous, aromatic boil.
+                </p>
+              </div>
+            </div>
+            <div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+              <button id="btn-tour-order" class="btn-secondary-sm text-xs">
+                <span>Try Our Samovar Brew</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. THE THREE PHILOSOPHICAL PILLARS -->
+    <section class="py-16 px-4 md:px-8 max-w-[1320px] mx-auto border-t border-outline/10">
+      <div class="flex flex-col gap-10">
+        
+        <div class="text-center max-w-2xl mx-auto flex flex-col gap-3">
+          <span class="text-xs font-bold uppercase tracking-widest text-primary">The Studio Creed</span>
+          <h2 class="font-cinzel text-2xl sm:text-3xl md:text-4xl text-[#fff4e3] font-bold">
+            Three Sacred Truths of Our Kettle
+          </h2>
+          <p class="text-sm text-on-surface-variant">
+            Why our café feels fundamentally different from high-volume corporate coffee dispensaries.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Pillar 1 -->
+          <div class="about-card flex flex-col justify-between gap-6 group">
+            <div class="flex flex-col gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/30 to-secondary-container/40 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]">local_fire_department</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Principle 01</span>
+              <h3 class="font-cinzel text-xl font-bold text-[#fff4e3]">Dheemi Aanch • The Unrushed Simmer</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                We refuse instant powders, microwave warmers, and mechanical pumps. Authentic spiced tea demands patience. When spices and tea dance over a controlled low flame, the volatile essential oils release their richest fragrances without bitterness.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-outline/15 text-xs text-primary font-medium flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">timer</span>
+              <span>Average boil time: 10–12 minutes</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="about-card flex flex-col justify-between gap-6 group">
+            <div class="flex flex-col gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/30 to-secondary-container/40 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]">nature</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Principle 02</span>
+              <h3 class="font-cinzel text-xl font-bold text-[#fff4e3]">Mitti Ki Khushboo • Earth to Earth</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                Paper cups are lined with plastic polyethylene that leeches toxins under high heat. Our porous, unglazed terracotta kulhads are pure Himalayan soil and water. They absorb excess moisture, cooling the rim while concentrating rich malty tea notes.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-outline/15 text-xs text-primary font-medium flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">recycling</span>
+              <span>100% Earth-Degradable • Zero Plastic</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="about-card flex flex-col justify-between gap-6 group">
+            <div class="flex flex-col gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/30 to-secondary-container/40 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-[30px]">psychology_alt</span>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Principle 03</span>
+              <h3 class="font-cinzel text-xl font-bold text-[#fff4e3]">Sukoon • The Mindful Third Space</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                In a frantic world of screens and hurried deadlines, The Chai Studio is designed as a peaceful harbour. Warm incandescent lighting, gentle acoustic melodies, hand-bound books, and warm cups invite meaningful contemplation and deep conversations.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-outline/15 text-xs text-primary font-medium flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px]">menu_book</span>
+              <span>No rushed tables • Free Wi-Fi &amp; Library</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. FOUNDERS' STORY & THE MASTER BREWERS -->
+    <section class="py-16 px-4 md:px-8 max-w-[1320px] mx-auto border-t border-outline/10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Founder Photo with Artisanal Frame -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden border border-primary/30 shadow-[0_20px_50px_rgba(0,0,0,0.8)] bg-[#241611]">
+            <img src="/about-founder.jpg" alt="Master Chai Brewer and Founder at The Chai Studio" class="w-full h-auto object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#160c07] via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#160c07]/90 backdrop-blur-md border border-primary/25">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-primary block">Founder &amp; Master Brewer</span>
+              <h4 class="font-cinzel text-base font-bold text-[#fff4e3]">Crafting Dehradun’s True Chai Soul</h4>
+              <p class="text-xs text-on-surface-variant mt-0.5">3 Decades of Himalayan Tea Blending &amp; Whole Spice Alchemy</p>
+            </div>
+          </div>
+          <!-- Decorative Glow Backdrop -->
+          <div class="absolute -top-6 -left-6 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+        </div>
+
+        <!-- Right: Story Narrative -->
+        <div class="lg:col-span-7 flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Roots in the Doon Valley</span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl text-[#fff4e3] font-bold leading-tight">
+              From Roadside Nostalgia to an Artisanal Movement
+            </h2>
+          </div>
+
+          <div class="flex flex-col gap-4 text-sm sm:text-base text-on-surface-variant leading-relaxed">
+            <p>
+              Growing up in Dehradun, winter mornings were synonymous with the hiss of tea kettles echoing across misty lanes, the sharp aroma of fresh crushed ginger, and the comforting warmth of unglazed clay cups clutched between gloved hands.
+            </p>
+            <p>
+              As commercial cafés introduced machine-pressed paper cups and syrup-pumped beverages, we watched this sacred sensory heritage fade. We envisioned a space that honored the generational alchemy of the roadside chaiwala while elevating it into a world-class culinary artform.
+            </p>
+            <p>
+              Today, <span class="text-primary font-semibold">The Chai Studio (Chai on Clicks)</span> brings together an authentic collection of recipes — from saffron-crowned Royal Kesar Chai and fiery Adrak-Elaichi brews to hand-pulled cold brews and artisanal grilled savouries.
+            </p>
+          </div>
+
+          <!-- Pull Quote -->
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-primary/10 to-transparent border-l-4 border-primary my-2">
+            <p class="font-serif italic text-base sm:text-lg text-[#fff4e3] leading-relaxed">
+              “Chai is never just tea leaves and milk. It is an unhurried invitation to sit, breathe, and find companionship in a cup of earthen gold.”
+            </p>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+            <div class="flex flex-col p-3 rounded-xl bg-surface-container-low border border-primary/20 text-center">
+              <span class="font-cinzel text-2xl font-bold text-primary">100%</span>
+              <span class="text-[11px] text-on-surface-variant uppercase tracking-wider mt-1">Pure Vegetarian</span>
+            </div>
+            <div class="flex flex-col p-3 rounded-xl bg-surface-container-low border border-primary/20 text-center">
+              <span class="font-cinzel text-2xl font-bold text-primary">14</span>
+              <span class="text-[11px] text-on-surface-variant uppercase tracking-wider mt-1">Potter Guilds</span>
+            </div>
+            <div class="flex flex-col p-3 rounded-xl bg-surface-container-low border border-primary/20 text-center">
+              <span class="font-cinzel text-2xl font-bold text-primary">7</span>
+              <span class="text-[11px] text-on-surface-variant uppercase tracking-wider mt-1">Whole Spices</span>
+            </div>
+            <div class="flex flex-col p-3 rounded-xl bg-surface-container-low border border-primary/20 text-center">
+              <span class="font-cinzel text-2xl font-bold text-primary">0%</span>
+              <span class="text-[11px] text-on-surface-variant uppercase tracking-wider mt-1">Synthetic Additives</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. INTERACTIVE AMBIENT SOUNDBOARD (THE STUDIO SOUNDSCAPE) -->
+    <section class="py-16 px-4 md:px-8 max-w-[1320px] mx-auto border-t border-outline/10">
+      <div class="soundscape-card p-6 md:p-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-primary/20">
+          <div class="flex flex-col gap-2 max-w-xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+              <span class="material-symbols-outlined text-[16px]">headphones</span>
+              <span>Interactive Sensory Experience</span>
+            </div>
+            <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-[#fff4e3]">
+              The Studio Ambient Soundscape
+            </h2>
+            <p class="text-xs sm:text-sm text-on-surface-variant">
+              Immerse yourself in the calming ambiance of our Dehradun café right now. Powered by Web Audio synthesis — tap to toggle relaxing sound layers.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <button id="master-sound-toggle" class="btn-primary text-xs sm:text-sm">
+              <span class="material-symbols-outlined text-[18px]">volume_up</span>
+              <span id="master-sound-text">Play Studio Ambiance</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sound Layers Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-8">
+          
+          <!-- Sound 1: Rain on Tin Roof -->
+          <button class="sound-toggle-btn" data-sound="rain" aria-label="Toggle Mountain Rain sound">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🌧️</span>
+              <div class="flex flex-col text-left">
+                <span class="font-bold text-sm text-[#fff4e3]">Doon Mountain Rain</span>
+                <span class="text-[11px] text-on-surface-variant">Gentle rain on rustic tin roof</span>
+              </div>
+            </div>
+            <div class="wave-bars" aria-hidden="true">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+          </button>
+
+          <!-- Sound 2: Simmering Kettle -->
+          <button class="sound-toggle-btn" data-sound="kettle" aria-label="Toggle Simmering Kettle sound">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🫖</span>
+              <div class="flex flex-col text-left">
+                <span class="font-bold text-sm text-[#fff4e3]">Bubbling Samovar</span>
+                <span class="text-[11px] text-on-surface-variant">Slow simmering spice decoction</span>
+              </div>
+            </div>
+            <div class="wave-bars" aria-hidden="true">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+          </button>
+
+          <!-- Sound 3: Crackling Sigri -->
+          <button class="sound-toggle-btn" data-sound="sigri" aria-label="Toggle Hearth Sigri sound">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🪵</span>
+              <div class="flex flex-col text-left">
+                <span class="font-bold text-sm text-[#fff4e3]">Winter Sigri Hearth</span>
+                <span class="text-[11px] text-on-surface-variant">Warm crackling charcoal embers</span>
+              </div>
+            </div>
+            <div class="wave-bars" aria-hidden="true">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+          </button>
+
+          <!-- Sound 4: Cafe Warmth -->
+          <button class="sound-toggle-btn" data-sound="hum" aria-label="Toggle Cozy Cafe sound">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">☕</span>
+              <div class="flex flex-col text-left">
+                <span class="font-bold text-sm text-[#fff4e3]">Café Acoustic Hum</span>
+                <span class="text-[11px] text-on-surface-variant">Cozy chatter &amp; clay clinks</span>
+              </div>
+            </div>
+            <div class="wave-bars" aria-hidden="true">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+          </button>
+
+        </div>
+
+        <p class="text-[11px] text-center text-on-surface-variant/70 pt-6">
+          Synthesized in real-time in your browser with zero external network downloads. Safe and calm.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- 6. SUSTAINABILITY & COMMUNITY COMMITMENT -->
+    <section class="py-16 px-4 md:px-8 max-w-[1320px] mx-auto border-t border-outline/10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-surface-container-low border border-primary/20 flex flex-col gap-3">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-[24px]">compost</span>
+          </div>
+          <h3 class="font-cinzel text-lg font-bold text-[#fff4e3]">100% Clay Kulhads</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Every cup returns cleanly to nature as soil nutrients. Over 100,000 single-use plastic cups prevented from landfills.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface-container-low border border-primary/20 flex flex-col gap-3">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-[24px]">diversity_3</span>
+          </div>
+          <h3 class="font-cinzel text-lg font-bold text-[#fff4e3]">Artisan Pottery Guild</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            We partner with 14 generational potter households across Uttarakhand, providing reliable year-round fair wages and livelihood.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface-container-low border border-primary/20 flex flex-col gap-3">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-[24px]">spa</span>
+          </div>
+          <h3 class="font-cinzel text-lg font-bold text-[#fff4e3]">Whole Spices Only</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Green cardamoms from Idukki, ginger roots from Doon farmers, and Ceylon cinnamon. Never pre-packaged chemical flavor essences.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-surface-container-low border border-primary/20 flex flex-col gap-3">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-[24px]">auto_stories</span>
+          </div>
+          <h3 class="font-cinzel text-lg font-bold text-[#fff4e3]">Community Library</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Our café shelves hold over 250 donated books. Read freely over chai, bring a favorite novel to exchange, or write poetry.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. VISIT US & BOOK A READING NOOK -->
+    <section class="py-16 px-4 md:px-8 max-w-[1320px] mx-auto border-t border-outline/10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Visit Info -->
+        <div class="lg:col-span-5 flex flex-col gap-5">
+          <div class="flex flex-col gap-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Open Every Single Day</span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl text-[#fff4e3] font-bold">
+              Find Your Corner in Dehradun
+            </h2>
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              Whether you are catching up with an old confidante, writing your next chapter, or simply craving the scent of cardamom in a hot kulhad, our doors are open.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-3 text-xs sm:text-sm text-on-surface-variant">
+            <div class="flex items-start gap-3 p-3 rounded-xl bg-surface-container-low border border-primary/20">
+              <span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">location_on</span>
+              <div>
+                <strong class="text-on-surface block">Studio Address:</strong>
+                <span>LD Tower, Mothorwala Road, near Bangali Kothi Chowk, Banjarawala, Dehradun, Uttarakhand 248121</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low border border-primary/20">
+              <span class="material-symbols-outlined text-primary text-[20px] shrink-0">schedule</span>
+              <div>
+                <strong class="text-on-surface block">Hours:</strong>
+                <span>Mon – Fri: 07:00 AM – 11:00 PM | Sat – Sun: 08:00 AM – 12:00 Midnight</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low border border-primary/20">
+              <span class="material-symbols-outlined text-primary text-[20px] shrink-0">call</span>
+              <div>
+                <strong class="text-on-surface block">Phone Hotline:</strong>
+                <span>+91 (0) 11 4982 3310</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 pt-2">
+            <a href="https://www.google.com/maps/search/?api=1&query=LD+Tower,+Mothorwala+Road,+near+Bangali+Kothi+Chowk,+Banjarawala,+Dehradun,+Uttarakhand+248121"
+              target="_blank" rel="noopener noreferrer" class="btn-primary text-xs">
+              <span class="material-symbols-outlined text-[16px]">navigation</span>
+              <span>Open in Google Maps</span>
+            </a>
+            <a href="/menu.html" class="btn-secondary-sm text-xs">
+              <span>View Full Menu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Reservation Form Card -->
+        <div class="lg:col-span-7">
+          <div class="about-card p-6 sm:p-8">
+            <div class="flex flex-col gap-1 mb-6 text-center sm:text-left">
+              <span class="text-xs font-bold uppercase tracking-wider text-primary">Pre-Reserve Your Seat</span>
+              <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-[#fff4e3]">Reserve a Cozy Table or Reading Nook</h3>
+              <p class="text-xs text-on-surface-variant">Planning a gathering, chess afternoon, or romantic evening? Let our samovar await you.</p>
+            </div>
+
+            <form id="reservation-form" class="flex flex-col gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="form-group">
+                  <label for="res-name">Your Full Name</label>
+                  <input type="text" id="res-name" placeholder="e.g. Shivanshi Verma" required />
+                </div>
+                <div class="form-group">
+                  <label for="res-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="res-phone" placeholder="e.g. +91 98765 43210" required />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="form-group">
+                  <label for="res-date">Date</label>
+                  <input type="date" id="res-date" required />
+                </div>
+                <div class="form-group">
+                  <label for="res-time">Arrival Time</label>
+                  <select id="res-time" required>
+                    <option value="04:00 PM">04:00 PM (Afternoon Tea)</option>
+                    <option value="05:30 PM">05:30 PM (Sunset Mist)</option>
+                    <option value="07:00 PM">07:00 PM (Evening Glow)</option>
+                    <option value="08:30 PM">08:30 PM (Dinner & Chai)</option>
+                    <option value="10:00 PM">10:00 PM (Late Night Kadak)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="res-guests">Chai Lovers</label>
+                  <select id="res-guests" required>
+                    <option value="1-2 Guests">1–2 Guests (Quiet Nook)</option>
+                    <option value="3-4 Guests">3–4 Guests (Teak Table)</option>
+                    <option value="5-8 Guests">5–8 Guests (Guild Lounge)</option>
+                    <option value="9+ Group">9+ (Celebration Group)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="res-nook">Preferred Vibe / Seating</label>
+                <select id="res-nook">
+                  <option value="Bookshelf Reading Nook">Bookshelf Reading Nook (Soft Armchair)</option>
+                  <option value="Samovar Counter Front">Counter Front (Watch the Chai Master Pour)</option>
+                  <option value="Window Garden View">Window Side (Monsoon Ferns & Rain Views)</option>
+                  <option value="Central Guild Table">Teakwood Long Table (Board Games / Discussions)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-primary w-full mt-2">
+                <span>Confirm Reservation Request</span>
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- QUICK ORDER KULHAD MODAL (Unified across all pages) -->
+  <div id="order-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-heading">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header">
+        <span class="modal-badge">Freshly Steamed</span>
+        <h3 id="modal-heading" class="modal-title font-cinzel">Craft Your Kulhad</h3>
+        <p class="modal-subtitle">Direct from the samovar to your hands.</p>
+      </div>
+
+      <form id="order-form" class="modal-form">
+        <div class="form-group">
+          <label for="blend-select">Select Blend</label>
+          <select id="blend-select" required>
+            <optgroup label="Signature Kulhad Chais">
+              <option value="Kesar Tea" data-price="40">Kesar Tea (Royal Saffron) (₹40)</option>
+              <option value="Elaichi Tea" data-price="40">Elaichi Tea (Cardamom) (₹40)</option>
+              <option value="Masala Tea" data-price="40">Masala Tea (7 Spices) (₹40)</option>
+              <option value="Adrak Tea" data-price="35">Adrak Tea (Crushed Ginger) (₹35)</option>
+              <option value="Chocolate Tea" data-price="35">Chocolate Tea (₹35)</option>
+              <option value="Rose Tea" data-price="35">Rose Tea (₹35)</option>
+              <option value="Pan Tea" data-price="40">Pan Tea (Betel Leaf Aroma) (₹40)</option>
+              <option value="Mawa Tea" data-price="40">Mawa Tea (Rich Milk Cake) (₹40)</option>
+            </optgroup>
+            <optgroup label="Specialty Coffee & Shakes">
+              <option value="Classic Cold Coffee" data-price="90">Classic Cold Coffee (₹90)</option>
+              <option value="Hazelnut Creame Cold Coffee" data-price="150">Hazelnut Creame Cold Coffee (₹150)</option>
+              <option value="Brownie Cold Coffee" data-price="130">Brownie Cold Coffee (₹130)</option>
+              <option value="Hot Coffee" data-price="45">Hot Artisanal Coffee (₹45)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sweetness-level">Sweetness</label>
+            <select id="sweetness-level">
+              <option value="Medium (Classic)">Medium (Classic)</option>
+              <option value="Kadak (Sweet)">Kadak (Extra Sweet)</option>
+              <option value="Fika (No Sugar)">Fika (Sugar Free)</option>
+              <option value="Organic Jaggery">Organic Jaggery (+₹10)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cup-qty">Quantity</label>
+            <div class="qty-control">
+              <button type="button" id="qty-minus" class="qty-btn" aria-label="Decrease quantity">-</button>
+              <input type="number" id="cup-qty" value="1" min="1" max="20" readonly />
+              <button type="button" id="qty-plus" class="qty-btn" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cust-name">Your Name</label>
+          <input type="text" id="cust-name" placeholder="e.g. Shivanshi" required />
+        </div>
+
+        <div class="form-group">
+          <label for="cust-phone">Contact Number / Table No.</label>
+          <input type="text" id="cust-phone" placeholder="e.g. +91 98765 43210 or Table 4" required />
+        </div>
+
+        <div class="order-summary-box">
+          <div class="summary-line">
+            <span>Price Per Cup</span>
+            <span id="summary-unit-price">₹40</span>
+          </div>
+          <div class="summary-line total">
+            <span>Estimated Total</span>
+            <span id="summary-total-price">₹40</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary w-full">Confirm &amp; Brew Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast" role="alert" aria-live="assertive">
+    <div class="toast-icon">✨</div>
+    <div class="toast-body">
+      <h4 class="toast-title font-cinzel" id="toast-title">Brewing Order Received!</h4>
+      <p class="toast-msg" id="toast-msg">Your hot artisanal kulhad chai is on the stove.</p>
+    </div>
+  </div>
+
+  <!-- LUXURY FOOTER MATCHING ALL PAGES -->
+  <footer class="w-full bg-[#160c07] text-on-surface pt-16 pb-12 border-t border-primary/20">
+    <div class="max-w-[1320px] mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img src="/logo.jpg" alt="The Chai Studio Emblem" class="w-12 h-12 rounded-full object-cover border border-primary/40 shadow-md" />
+            <div class="flex flex-col">
+              <span class="font-cinzel text-lg font-bold text-on-surface tracking-wide uppercase">THE CHAI STUDIO</span>
+              <span class="text-xs font-bold text-primary tracking-widest uppercase">CHAI ON CLICKS</span>
+            </div>
+          </div>
+          <p class="text-xs text-on-surface-variant italic">“BREWED FRESH. SERVED WITH LOVE.”</p>
+          <div class="flex items-center gap-2 text-xs text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[18px]">alternate_email</span>
+            <span class="hover:text-primary transition-colors cursor-pointer">@thechaistudioindresh</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="flex flex-col gap-3">
+          <h4 class="font-cinzel text-sm text-primary tracking-wider uppercase font-bold">Quick Navigation</h4>
+          <div class="flex flex-col gap-2 text-sm text-on-surface-variant">
+            <a href="/index.html" class="hover:text-primary transition-colors">Artisanal Home</a>
+            <a href="/menu.html" class="hover:text-primary transition-colors">Official Studio Menu</a>
+            <a href="/story.html" class="hover:text-primary transition-colors">Our Heritage &amp; Craft Story</a>
+            <a href="/about.html" class="text-primary font-bold">About The Studio &amp; Team</a>
+            <a href="/contact.html" class="hover:text-primary transition-colors">Contact &amp; Map</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Hours -->
+        <div class="flex flex-col gap-3">
+          <h4 class="font-cinzel text-sm text-primary tracking-wider uppercase font-bold">Opening Hours</h4>
+          <div class="flex flex-col gap-1 text-xs text-on-surface-variant">
+            <div class="flex justify-between">
+              <span class="text-on-surface">Monday – Friday:</span>
+              <span>07:00 AM – 11:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-on-surface">Saturday – Sunday:</span>
+              <span>08:00 AM – 12:00 AM</span>
+            </div>
+            <p class="text-primary font-bold text-[11px] pt-2 uppercase tracking-wider">
+              Fresh Kadak Infusions Daily
+            </p>
+          </div>
+        </div>
+
+        <!-- Col 4: Location -->
+        <div class="flex flex-col gap-3">
+          <h4 class="font-cinzel text-sm text-primary tracking-wider uppercase font-bold">The Studio</h4>
+          <div class="flex flex-col gap-2 text-xs text-on-surface-variant">
+            <div class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">location_on</span>
+              <span>LD Tower, Mothorwala Road, near Bangali Kothi Chowk, Banjarawala, Dehradun 248121</span>
+            </div>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span>
+              <span>+91 (0) 11 4982 3310</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-6 border-t border-outline/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant">
+        <p class="text-center md:text-left">THE CHAI STUDIO — CHAI ON CLICKS © 2026. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/menu.html" class="hover:text-primary transition-colors">Menu Catalog</a>
+          <a href="/story.html" class="hover:text-primary transition-colors">Craftsmanship</a>
+          <a href="/about.html" class="hover:text-primary transition-colors">Our Studio</a>
+          <a href="/contact.html" class="hover:text-primary transition-colors">Directions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Controller Script -->
+  <script type="module" src="./about.js"></script>
+</body>
+
+</html>

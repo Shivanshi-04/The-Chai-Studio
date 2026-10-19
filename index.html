@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="The Chai Studio — Chai on Clicks. A compact, immersive 3D-style café experience celebrating royal slow-brewed kulhad chai, fresh stone-ground spices, and artisanal heritage." />
+  <meta name="theme-color" content="#1c110c" />
+  <title>The Chai Studio — Chai on Clicks | Artisanal Kulhad Chai</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Material Symbols & Tailwind Configuration from code.html -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed": "#ffdbcb",
+            "on-secondary-fixed": "#341100",
+            "on-tertiary-fixed-variant": "#604021",
+            "error-container": "#93000a",
+            "tertiary-fixed": "#ffdcc0",
+            "on-error-container": "#ffdad6",
+            "surface-dim": "#1c110c",
+            "primary": "#fdb96e",
+            "surface-container": "#291d17",
+            "on-error": "#690005",
+            "primary-container": "#d99a52",
+            "surface-container-highest": "#40322c",
+            "tertiary-fixed-dim": "#edbd95",
+            "on-tertiary-container": "#543517",
+            "inverse-on-surface": "#3b2d27",
+            "surface-container-low": "#251914",
+            "on-surface": "#f5ded5",
+            "tertiary": "#edbd95",
+            "on-secondary-fixed-variant": "#73350f",
+            "surface": "#1c110c",
+            "on-tertiary": "#462a0d",
+            "secondary-fixed-dim": "#ffb690",
+            "error": "#ffb4ab",
+            "on-primary-container": "#593400",
+            "on-primary": "#482900",
+            "on-tertiary-fixed": "#2d1600",
+            "background": "#1c110c",
+            "on-primary-fixed": "#2b1700",
+            "surface-container-high": "#342721",
+            "outline": "#9e8e7f",
+            "primary-fixed": "#ffdcbb",
+            "tertiary-container": "#ca9e78",
+            "inverse-surface": "#f5ded5",
+            "on-secondary": "#552100",
+            "surface-tint": "#fdb96e",
+            "surface-variant": "#40322c",
+            "primary-fixed-dim": "#fdb96e",
+            "surface-container-lowest": "#160c07",
+            "surface-bright": "#443630",
+            "secondary-container": "#73350f",
+            "on-secondary-container": "#f7a071",
+            "inverse-primary": "#85530f",
+            "on-surface-variant": "#d6c3b3",
+            "outline-variant": "#514538",
+            "on-primary-fixed-variant": "#673d00",
+            "on-background": "#f5ded5",
+            "secondary": "#ffb690"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1.25rem",
+            "margin-tablet": "2rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "title-md": [
+              "Plus Jakarta Sans"
+            ],
+            "title-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "body-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "display-lg": [
+              "Playfair Display"
+            ],
+            "body-md": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-sm": [
+              "Playfair Display"
+            ],
+            "headline-lg-mobile": [
+              "Playfair Display"
+            ],
+            "body-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "display-lg-mobile": [
+              "Playfair Display"
+            ],
+            "label-sm": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-lg": [
+              "Playfair Display"
+            ],
+            "label-md": [
+              "Plus Jakarta Sans"
+            ],
+            "label-lg": [
+              "Plus Jakarta Sans"
+            ],
+            "headline-md": [
+              "Playfair Display"
+            ]
+          },
+          "fontSize": {
+            "title-md": [
+              "16px",
+              {
+                "lineHeight": "22px",
+                "fontWeight": "600"
+              }
+            ],
+            "title-lg": [
+              "18px",
+              {
+                "lineHeight": "24px",
+                "letterSpacing": "0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-lg": [
+              "16px",
+              {
+                "lineHeight": "26px",
+                "fontWeight": "400"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "64px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-md": [
+              "14px",
+              {
+                "lineHeight": "22px",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-sm": [
+              "22px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "500"
+              }
+            ],
+            "headline-lg-mobile": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "letterSpacing": "0em",
+                "fontWeight": "600"
+              }
+            ],
+            "body-sm": [
+              "12px",
+              {
+                "lineHeight": "18px",
+                "fontWeight": "400"
+              }
+            ],
+            "display-lg-mobile": [
+              "38px",
+              {
+                "lineHeight": "44px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-sm": [
+              "10px",
+              {
+                "lineHeight": "14px",
+                "letterSpacing": "0.08em",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-lg": [
+              "40px",
+              {
+                "lineHeight": "48px",
+                "letterSpacing": "-0.01em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-md": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "letterSpacing": "0.05em",
+                "fontWeight": "600"
+              }
+            ],
+            "label-lg": [
+              "14px",
+              {
+                "lineHeight": "18px",
+                "letterSpacing": "0.04em",
+                "fontWeight": "600"
+              }
+            ],
+            "headline-md": [
+              "28px",
+              {
+                "lineHeight": "36px",
+                "fontWeight": "500"
+              }
+            ]
+          }
+        },
+      },
+    }</script>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Top Native/CSS Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Graceful Fast Loader -->
+  <div id="loader" class="loader-screen" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+    aria-label="Steeping the experience">
+    <div class="loader-content">
+      <div class="loader-emblem">
+        <div class="steaming-cup">
+          <span class="steam s1"></span>
+          <span class="steam s2"></span>
+          <span class="steam s3"></span>
+          <img src="/logo.jpg" alt="The Chai Studio Emblem" class="loader-logo-img" />
+        </div>
+      </div>
+      <h2 class="loader-title">The Chai Studio</h2>
+      <p class="loader-subtitle">Chai on Clicks • Heating the Samovar</p>
+
+      <div class="loader-bar-wrapper">
+        <div id="loader-bar" class="loader-bar"></div>
+      </div>
+      <div class="loader-stats">
+        <span id="loader-percent">0%</span>
+        <span id="loader-status">Preparing first brew...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Luxury Navigation Header -->
+  <header class="studio-header" id="navbar">
+    <div class="header-container">
+      <a href="#hero-scroller" class="brand-logo" aria-label="The Chai Studio Home">
+        <div class="logo-symbol">
+          <img src="/logo.jpg" alt="The Chai Studio Emblem" class="brand-logo-img" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">THE CHAI STUDIO</span>
+          <span class="logo-tag">CHAI ON CLICKS</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero-scroller" class="nav-btn">Home</a>
+        <a href="/menu.html" class="nav-btn">Menu</a>
+        <a href="/story.html" class="nav-btn">Our Story</a>
+        <a href="/about.html" class="nav-btn">About</a>
+        <a href="/contact.html" class="nav-btn">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-quick-order" class="btn-primary">
+          <span>Order Kulhad</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SCROLL SHOWCASE (COMPACT 3.5 VH JOURNEY) -->
+  <main>
+    <section id="hero-scroller" class="scroll-showcase" aria-label="Interactive Kulhad Chai 3D Experience">
+
+      <!-- Sticky Canvas Container -->
+      <div class="sticky-canvas-container" id="canvas-wrapper">
+        <canvas id="chai-canvas"
+          aria-label="High definition animation of hot masala chai pouring into a terracotta kulhad"></canvas>
+
+        <!-- Cinematic Depth Vignette & Ambient Radial Lighting -->
+        <div class="canvas-vignette" aria-hidden="true"></div>
+        <div class="canvas-warm-glow" id="ambient-glow" aria-hidden="true"></div>
+
+
+
+        <!-- MOOD QUOTE ON LEFT SIDE (APPEARS AT 6 SECONDS, NO BACKGROUND COLOR) -->
+        <div class="hero-cafe-details hero-quote-left" id="hero-cafe-details" aria-label="The Chai Studio Mood Quote">
+          <p class="quote-line-1">Mood kaisa bhi ho,</p>
+          <h2 class="quote-line-2">chai to banti hai.</h2>
+          <div class="quote-accent-bar" aria-hidden="true"></div>
+        </div>
+
+        <!-- YOUR DESTINATION CARD (BOTTOM RIGHT OVERLAY - REPLACING GEMINI WATERMARK) -->
+        <aside class="hero-destination-card" id="hero-destination-card"
+          aria-label="The Chai Studio Destination Location">
+          <div class="destination-card-glow" aria-hidden="true"></div>
+          <div class="destination-badge-row">
+            <span class="destination-pill">
+              <span class="destination-pulse-dot" aria-hidden="true"></span>
+              <span class="destination-tag">YOUR DESTINATION</span>
+            </span>
+            <span class="destination-status-tag">
+              <span class="material-symbols-outlined text-[14px] text-primary">storefront</span>
+              <span>Open Daily</span>
+            </span>
+          </div>
+
+          <div class="destination-content">
+            <div class="destination-icon-wrap" aria-hidden="true">
+              <span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+            </div>
+            <div class="destination-text-block">
+              <h3 class="destination-primary-name">LD Tower, Mothorwala Road</h3>
+              <p class="destination-landmark">near Bangali Kothi Chowk, Banjarawala</p>
+              <p class="destination-city-pin">Dehradun, Uttarakhand 248121</p>
+            </div>
+          </div>
+
+          <div class="destination-footer">
+            <a href="https://www.google.com/maps/search/?api=1&query=LD+Tower,+Mothorwala+Road,+near+Bangali+Kothi+Chowk,+Banjarawala,+Dehradun,+Uttarakhand+248121"
+              target="_blank" rel="noopener noreferrer" class="destination-btn-route"
+              title="Open Dehradun Studio location on Google Maps">
+              <span class="material-symbols-outlined text-[16px]">directions</span>
+              <span>Get Directions</span>
+              <span class="material-symbols-outlined text-[13px] arrow-icon">north_east</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- ==========================================================================
+         SECTIONS FROM code.html (SECTIONS 2 TO 5 - PREVIEW, STORY, GALLERY, VISIT)
+         ========================================================================== -->
+    <div class="stitch-content-flow w-full bg-surface text-on-surface">
+      <!-- 2. SIGNATURE MENU PREVIEW (CLEAN & TRUSTWORTHY) -->
+      <section id="signature-menu" class="w-full py-space-xl lg:py-24 bg-surface relative overflow-hidden">
+        <!-- Ambient background lighting -->
+        <div class="pointer-events-none absolute top-1/4 -right-20 h-96 w-96 rounded-full bg-primary/10 blur-[130px]" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute bottom-10 -left-20 h-96 w-96 rounded-full bg-secondary-container/20 blur-[140px]" aria-hidden="true"></div>
+
+        <div class="max-w-[1240px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-10 relative z-10">
+          
+          <!-- Section Header: Clean & Welcoming -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="flex flex-col gap-2 max-w-2xl">
+              <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-semibold">
+                OUR HANDCRAFTED ESSENTIALS
+              </span>
+              <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-[42px] text-on-surface leading-tight font-bold">
+                Your Kind of Comfort, Served Fresh.
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                From handcrafted chai and rich coffee to delicious bites and sweet treats, there's always something worth coming back for.
+              </p>
+            </div>
+            
+            <div class="shrink-0">
+              <a href="/menu.html" class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-secondary transition-colors group px-5 py-2.5 rounded-full bg-primary/10 border border-primary/25 hover:bg-primary/20">
+                <span>View All</span>
+                <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Clean 6-Card Grid (Spacious, Minimalist & Appetizing) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+            
+            <!-- 1. Tandoori Kulhad Chai -->
+            <a href="/menu.html" class="clean-menu-card group">
+              <div class="clean-card-img-wrap">
+                <img src="/menu-tandoori-kulhad.jpg" alt="Tandoori Kulhad Chai in earthy clay cup" class="clean-card-img" loading="lazy" />
+                <span class="clean-price-badge">₹50</span>
+              </div>
+              <div class="clean-card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-cinzel text-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Tandoori Kulhad Chai
+                  </h3>
+                  <span class="text-xs text-primary font-medium">Bestseller</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Red-clay kulhad roasted on hot embers, infused with Assam orthodox tea, crushed ginger, and cardamom.
+                </p>
+              </div>
+            </a>
+
+            <!-- 2. Royal Kesar Malai Chai -->
+            <a href="/menu.html" class="clean-menu-card group">
+              <div class="clean-card-img-wrap">
+                <img src="/menu-kesar-chai.jpg" alt="Royal Kesar Malai Chai with saffron threads" class="clean-card-img" loading="lazy" />
+                <span class="clean-price-badge">₹70</span>
+              </div>
+              <div class="clean-card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-cinzel text-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Royal Kesar Malai Chai
+                  </h3>
+                  <span class="text-xs text-secondary font-medium">Special</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Golden Kashmiri saffron steeped with thick clotted cream, whole cardamom, and crushed pistachios.
+                </p>
+              </div>
+            </a>
+
+            <!-- 3. Classic Thick Cold Coffee -->
+            <a href="/menu.html" class="clean-menu-card group">
+              <div class="clean-card-img-wrap">
+                <img src="/menu-cold-coffee.jpg" alt="Classic Thick Cold Coffee with chocolate drizzle" class="clean-card-img" loading="lazy" />
+                <span class="clean-price-badge">₹90</span>
+              </div>
+              <div class="clean-card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-cinzel text-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Classic Cold Coffee
+                  </h3>
+                  <span class="text-xs text-primary font-medium">Chilled</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Double-shot espresso churned thick with farm milk, Madagascar vanilla, and dark chocolate drizzle.
+                </p>
+              </div>
+            </a>
+
+            <!-- 4. Double Masala Cheese Maggi -->
+            <a href="/menu.html" class="clean-menu-card group">
+              <div class="clean-card-img-wrap">
+                <img src="/menu-cheese-maggi.jpg" alt="Double Masala Cheese Maggi with herbs" class="clean-card-img" loading="lazy" />
+                <span class="clean-price-badge">₹90</span>
+              </div>
+              <div class="clean-card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-cinzel text-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Double Masala Maggi
+                  </h3>
+                  <span class="text-xs text-primary font-medium">Café Favorite</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Street-style pan noodles tossed with secret spices, sweet golden corn, and melted mozzarella.
+                </p>
+              </div>
+            </a>
+
+            <!-- 5. Tandoori Paneer Pizza -->
+            <a href="/menu.html" class="clean-menu-card group">
+              <div class="clean-card-img-wrap">
+                <img src="/menu-paneer-pizza.jpg" alt="Tandoori Paneer Pizza with fresh basil" class="clean-card-img" loading="lazy" />
+                <span class="clean-price-badge">₹230</span>
+              </div>
+              <div class="clean-card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-cinzel text-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Tandoori Paneer Pizza
+                  </h3>
+                  <span class="text-xs text-primary font-medium">Stone-Baked</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Hand-stretched crispy crust topped with house roasted garlic sauce, spiced paneer chunks, and mozzarella.
+                </p>
+              </div>
+            </a>
+
+            <!-- 6. Toasted Bun Maska -->
+            <a href="/menu.html" class="clean-menu-card group">
+              <div class="clean-card-img-wrap">
+                <img src="/menu-maska-bun.jpg" alt="Golden Toasted Bun Maska with salted butter" class="clean-card-img" loading="lazy" />
+                <span class="clean-price-badge">₹35</span>
+              </div>
+              <div class="clean-card-body">
+                <div class="flex items-center justify-between">
+                  <h3 class="font-cinzel text-lg font-bold text-on-surface group-hover:text-primary transition-colors">
+                    Toasted Bun Maska
+                  </h3>
+                  <span class="text-xs text-primary font-medium">Chai Companion</span>
+                </div>
+                <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                  Warm pillow-soft bun toasted on a hot tawa with generous salted butter. The quintessential chai pairing.
+                </p>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Ambient Centered Brand Logo Watermark (Fixed in Center Between Menu & Our Story) -->
+      <div class="menu-story-watermark-divider" aria-hidden="true">
+        <div class="watermark-divider-line left-line"></div>
+        <div class="watermark-emblem-wrapper">
+          <img src="/logo.jpg" alt="The Chai Studio Emblem" class="watermark-emblem-img" />
+        </div>
+        <div class="watermark-divider-line right-line"></div>
+      </div>
+
+      <!-- 3. BRAND STORY & SIGNATURE RITUAL (Combined Split Section) -->
+      <section id="our-story" class="w-full py-space-xl lg:py-24 bg-surface-container-lowest relative overflow-hidden">
+        <div
+          class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+          <!-- Narrative Column (6 cols) -->
+          <div class="lg:col-span-6 flex flex-col gap-space-lg">
+            <div class="flex flex-col gap-space-xs">
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">ROOTED IN
+                TRADITION. MADE FOR TODAY.</span>
+              <h2 class="font-headline-lg lg:text-[42px] leading-tight text-on-surface font-serif">More Than Chai. It's
+                a Feeling.</h2>
+            </div>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Inspired by India's timeless love for chai, <span class="text-on-surface font-semibold">The Chai
+                Studio</span> brings comforting cups, refreshing sips, and café favourites together in one welcoming
+              space. Handcrafted kulhads, slow-brewed tea leaves, crushed ginger, and aromatic whole spices meet
+              contemporary street culture.
+            </p>
+            <!-- Value Pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+              <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+                <span class="material-symbols-outlined text-primary text-[24px]">eco</span>
+                <span class="font-title-md text-title-md text-on-surface">100% Whole Spices</span>
+                <span class="font-body-sm text-body-sm text-outline">Never powders or artificial syrups.</span>
+              </div>
+              <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+                <span class="material-symbols-outlined text-primary text-[24px]">potted_plant</span>
+                <span class="font-title-md text-title-md text-on-surface">Terracotta Kulhad</span>
+                <span class="font-body-sm text-body-sm text-outline">Natural earthen aroma in every single pour.</span>
+              </div>
+              <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+                <span class="material-symbols-outlined text-primary text-[24px]">restaurant</span>
+                <span class="font-title-md text-title-md text-on-surface">Fresh Café Comforts</span>
+                <span class="font-body-sm text-body-sm text-outline">Prepared made-to-order every time.</span>
+              </div>
+            </div>
+            <div class="pt-space-xs">
+              <a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-secondary transition-colors group"
+                href="/story.html">
+                <span>Read our complete story</span>
+                <span
+                  class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">east</span>
+              </a>
+            </div>
+          </div>
+          <!-- Visual Composition (6 cols) -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative w-full h-[460px] rounded-3xl overflow-hidden shadow-2xl bg-surface-container">
+              <img class="w-full h-full object-cover object-center"
+                alt="Commercial Tea Brewer Chai Machine pouring fresh steaming authentic chai into a cup"
+                data-alt="Commercial Tea Brewer Chai Machine pouring fresh steaming authentic chai into a cup"
+                src="/tea-steamer.jpg" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent">
+              </div>
+              <!-- Glass Floating Badge -->
+              <div
+                class="absolute bottom-6 left-6 right-6 p-space-md rounded-2xl bg-surface-container-highest/80 backdrop-blur-lg flex items-center justify-between">
+                <div class="flex items-center gap-space-md">
+                  <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[20px]">verified</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="font-title-md text-title-md text-on-surface">Fresh Batches Every 15 Mins</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Unadulterated full-cream milk &amp;
+                      high-altitude Assam leaf.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4. CAFÉ AMBIENCE & HIGHLIGHTS GALLERY (ABOUT SECTION) -->
+      <section id="about" class="w-full py-space-xl lg:py-24 bg-surface relative">
+        <span id="studio-gallery" class="sr-only"></span>
+        <div
+          class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex flex-col gap-space-xl">
+          <!-- Section Title -->
+          <div class="flex flex-col gap-space-xs max-w-xl">
+            <span class="font-label-sm text-label-sm text-primary tracking-widest uppercase font-bold">THE STUDIO
+              ATMOSPHERE</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">Warm Lights, Good Vibes.</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Step in for a quiet solo sip, an evening
+              catch-up with friends, or late-night study chai.</p>
+          </div>
+          <!-- Bento Grid (4 photos) -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+            <!-- Bento 1: Featured Tall Card (7 cols) -->
+            <div
+              class="md:col-span-7 relative h-80 md:h-[420px] rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="Overhead close-up of piping hot artisanal Masala Kulhad Chai with rich foam surrounded by whole cinnamon rolls, green cardamom pods, and star anise on dark mahogany wood."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0485fe4yLHhW-4t1oBXE7rVQQUumAPo8uT7tXv7M9iQh7OmS6bN2JKAv1xrEwZPI4PNh3zqwH6gU_vo821GmviFJdq-a-hlkpCNLGxngfLslgq8QEtkImYp5582wYPPfJ53qU1y6OYSsGne5jZ7rVzjy6yX__5xMmFnEM4-j8LuIDhHHL9tpaQONAiIUxUeqyqEEfyiK-YO7SUc7kTr9g6dnNg8T3flZaYyX7xcPi44HpRQcShCgzqg" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent">
+              </div>
+              <div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+                <div>
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Classic
+                    Ritual</span>
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">Steaming Kulhad Chai</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Infused with roasted cinnamon &amp; green
+                    cardamom</p>
+                </div>
+                <span class="font-title-md text-title-md text-primary font-semibold">₹40</span>
+              </div>
+            </div>
+            <!-- Bento 2: Right Top (5 cols) -->
+            <div
+              class="md:col-span-5 relative h-80 md:h-[420px] rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="Artisan cold coffee in a heavy glass mug crowned with chocolate whipped cream and dark cocoa sprinkles on an amber-lit cafe marble table."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeYQne73lq7nSDKWnrrNdP8lPNVn2pCSA_zhE-1ikGp_qYXWLxMVBXJf9uxzkMcx5S4OOyLF7tkd-PzBf9DPh_0K87BgZvbnD_o-4M0BG6nAQmiGKcR_2hTv_zVZzg0kbbr2pBcNaNmGCIkGkajLoYhWn3Xr47XkC6I_Sz0SwmmCBeETXIUmF0_FaMUeFem37MaujTbJyGG7HtxWlXwh0PqykfVDu4ytht2TMNmCAf-MHVtoNOOHc3xg" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent">
+              </div>
+              <div class="absolute bottom-5 left-5 right-5 flex justify-between items-end">
+                <div>
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Chilled
+                    Sips</span>
+                  <h4 class="font-headline-sm text-headline-sm text-on-surface">Whipped Cold Coffee</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Dark mocha infusion with silky cream</p>
+                </div>
+                <span class="font-title-md text-title-md text-primary font-semibold">₹110</span>
+              </div>
+            </div>
+            <!-- Bento 3: Bottom Left (5 cols) -->
+            <div
+              class="md:col-span-5 relative h-72 rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="Sizzling cheesy double masala Maggi noodles served in an artisanal terracotta bowl with chopped chilies and melting melted mozzarella."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLDIi9KYnyZMBvTeXR7n5JkB7s9naorC2xib5XM0UnSMM2vmt-1qrL_2pfiFSsueGyxzUiiVuFZuWNGWJGGutjEYHdTvu2S1ILsWd9jO7Rg1w1Mu__ERUd-yCoMQaCnDTxS-7MBI_2OrftUuSQkk0yL46QwdONmXAc4mWSSsURmjklZel3hgDPd9kwcut2kObaZs6GFm4ZcHB5Hub7GKuMsd8CO8VM0XvqMn1DtrYQYZswU_sF6KaUcA" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent">
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                <div>
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Midnight
+                    Craving</span>
+                  <h4 class="font-title-lg text-title-lg text-on-surface">Cheesy Tandoori Maggi</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">House blend tadka seasoning</p>
+                </div>
+                <span class="font-title-md text-title-md text-primary font-semibold">₹75</span>
+              </div>
+            </div>
+            <!-- Bento 4: Bottom Right (7 cols) -->
+            <div
+              class="md:col-span-7 relative h-72 rounded-2xl overflow-hidden bg-surface-container-high group shadow-lg">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                data-alt="Crispy freshly baked artisanal pizza slice with charred crust and stretch cheese next to golden seasoned peri-peri potato fries on a dark presentation paddle."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbh9PoVxlLqttz9TqyHT9APMkEcS2ehL0wYs-wfiaERVl83JEmM7AJ1h1eZm0-nwmaUgkYGSctTYTmobGMecVAsGH6LJ9S5x6qkwvygunnjHOGbGqXPdmmtXEJVs-IQ8bfBSqJ4EAnklPTVkQCd2H-Is4ap7rB5k2Cdnyu-sLKsPnSmDXsJehZ5GGgqEWS4U3cLx7rTsVdtdpbgWyISvJQUCuj_86qAG_f_C2sM4s3p1jeVTerlmYIIQ" />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent">
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                <div>
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Oven &amp;
+                    Grill</span>
+                  <h4 class="font-title-lg text-title-lg text-on-surface">Crispy Crust Pizza &amp; Fries</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Hand-stretched with fresh mozzarella
+                    &amp; herbs</p>
+                </div>
+                <span class="font-title-md text-title-md text-primary font-semibold">₹149</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5. COMPACT VISIT & CONTACT BAR -->
+      <section id="visit-contact" class="w-full py-space-lg bg-surface-container-low">
+        <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+          <div
+            class="p-space-lg lg:p-space-xl rounded-3xl bg-surface-container flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-xl">
+            <!-- Left info -->
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+              <div class="flex items-center gap-space-md">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                  <span class="material-symbols-outlined text-[24px]">schedule</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Open
+                    Daily</span>
+                  <span class="font-title-md text-title-md text-on-surface">10:00 AM – 11:30 PM</span>
+                </div>
+              </div>
+              <div class="hidden sm:block h-8 w-px bg-outline-variant/40"></div>
+              <div class="flex items-center gap-space-md">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                  <span class="material-symbols-outlined text-[24px]">photo_camera</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Tag Us on
+                    Instagram</span>
+                  <span class="font-title-md text-title-md text-on-surface">@thechaistudioindresh</span>
+                </div>
+              </div>
+            </div>
+            <!-- Right Quick Actions -->
+            <div class="flex items-center gap-space-md w-full lg:w-auto">
+              <a class="flex-1 lg:flex-none inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-colors"
+                href="https://www.google.com/maps/search/?api=1&query=LD+Tower,+Mothorwala+Road,+near+Bangali+Kothi+Chowk,+Banjarawala,+Dehradun,+Uttarakhand+248121"
+                target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined text-[18px]">navigation</span>
+                <span>Get Directions</span>
+              </a>
+              <a class="flex-1 lg:flex-none inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-[0_0_16px_rgba(253,185,110,0.25)]"
+                href="tel:+911149823310">
+                <span class="material-symbols-outlined text-[18px]">call</span>
+                <span>Call Café</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="w-full bg-surface-container-lowest text-on-surface pt-space-xl pb-space-lg">
+    <div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl">
+        <div class="flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-md"><img alt="The Chai Studio Emblem"
+              class="w-12 h-12 rounded-full object-cover border-2 border-primary/60 shadow-[0_0_12px_rgba(253,185,110,0.3)]"
+              src="/logo.jpg" />
+            <div class="flex flex-col"><span
+                class="font-title-lg text-title-lg text-on-surface tracking-wide uppercase">THE CHAI STUDIO</span><span
+                class="font-label-sm text-label-sm text-primary tracking-widest uppercase">CHAI ON CLICKS</span></div>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant italic">“BREWED FRESH. SERVED WITH LOVE.”</p>
+          <div class="flex items-center gap-space-sm text-on-surface-variant"><span
+              class="material-symbols-outlined text-primary text-[18px]">alternate_email</span><span
+              class="font-label-md text-label-md hover:text-primary transition-colors cursor-pointer">@thechaistudioindresh</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-md">
+          <h3 class="font-title-md text-title-md text-primary tracking-wider uppercase">Quick Navigation</h3>
+          <div class="flex flex-col gap-space-sm"><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="home" href="#">Artisanal Home</a><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              href="/menu.html">Signature Brews &amp; Kulhads</a><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              href="/story.html">Generational Heritage (Our Story)</a><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              href="/about.html">About The Studio &amp; Team</a><a
+              class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors"
+              data-path="contact" href="#visit-contact">Studio Inquiries</a></div>
+        </div>
+        <div class="flex flex-col gap-space-md">
+          <h3 class="font-title-md text-title-md text-primary tracking-wider uppercase">Opening Hours</h3>
+          <div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+            <div class="flex justify-between"><span class="text-on-surface">Monday – Friday:</span><span>07:00 AM –
+                11:00 PM</span></div>
+            <div class="flex justify-between"><span class="text-on-surface">Saturday – Sunday:</span><span>08:00 AM –
+                12:00 AM</span></div>
+            <p class="text-primary font-label-sm text-label-sm pt-space-xs tracking-wider uppercase">Fresh Kadak
+              Infusions Daily</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-md">
+          <h3 class="font-title-md text-title-md text-primary tracking-wider uppercase">The Studio</h3>
+          <div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+            <div class="flex items-start gap-space-xs"><span
+                class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">location_on</span><span>LD
+                Tower, Mothorwala Road, near Bangali Kothi Chowk, Banjarawala, Dehradun, Uttarakhand 248121</span></div>
+            <div class="flex items-center gap-space-xs mt-space-xs"><span
+                class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span>+91 (0) 11 4982
+                3310</span></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-md text-label-md text-on-surface-variant">
+        <p class="text-center md:text-left">THE CHAI STUDIO — CHAI ON CLICKS © 2024. All rights reserved.</p>
+        <div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors" data-path="privacy"
+            href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="terms" href="#">Terms
+            of Service</a><a class="hover:text-primary transition-colors"
+            href="https://www.google.com/maps/search/?api=1&query=LD+Tower,+Mothorwala+Road,+near+Bangali+Kothi+Chowk,+Banjarawala,+Dehradun,+Uttarakhand+248121"
+            target="_blank" rel="noopener noreferrer">Location &amp; Directions</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE ORDER CUSTOMIZATION MODAL -->
+  <div id="order-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-heading">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header">
+        <span class="modal-badge">Freshly Steamed</span>
+        <h3 id="modal-heading" class="modal-title">Craft Your Kulhad</h3>
+        <p class="modal-subtitle">Direct from the samovar to your hands.</p>
+      </div>
+
+      <form id="order-form" class="modal-form">
+        <div class="form-group">
+          <label for="blend-select">Select Blend</label>
+          <select id="blend-select" required>
+            <optgroup label="Chai (Hot Brews)">
+              <option value="Chocolate Tea" data-price="35">Chocolate Tea (₹35)</option>
+              <option value="Adrak Tea" data-price="35">Adrak Tea (₹35)</option>
+              <option value="Rose Tea" data-price="35">Rose Tea (₹35)</option>
+              <option value="Kesar Tea" data-price="40">Kesar Tea (₹40)</option>
+              <option value="Elaichi Tea" data-price="40">Elaichi Tea (₹40)</option>
+              <option value="Masala Tea" data-price="40">Masala Tea (₹40)</option>
+              <option value="Pan Tea" data-price="40">Pan Tea (₹40)</option>
+              <option value="Mawa Tea" data-price="40">Mawa Tea (₹40)</option>
+              <option value="Lemon Tea" data-price="40">Lemon Tea (₹40)</option>
+            </optgroup>
+            <optgroup label="Coffee & Cold Brews">
+              <option value="Classic Cold Coffee" data-price="90">Classic Cold Coffee (₹90)</option>
+              <option value="Choco Cold Coffee" data-price="100">Choco Cold Coffee (₹100)</option>
+              <option value="Strong Cold Coffee" data-price="110">Strong Cold Coffee (₹110)</option>
+              <option value="Cold Coffee with Ice Cream" data-price="120">Cold Coffee with Ice Cream (₹120)</option>
+              <option value="Brownie Cold Coffee" data-price="130">Brownie Cold Coffee (₹130)</option>
+              <option value="Hazelnut Creame Cold Coffee" data-price="150">Hazelnut Creame Cold Coffee (₹150)</option>
+              <option value="Irish Creame Cold Coffee" data-price="150">Irish Creame Cold Coffee (₹150)</option>
+              <option value="Caramel Creame Cold Coffee" data-price="160">Caramel Creame Cold Coffee (₹160)</option>
+              <option value="Hot Coffee" data-price="45">Hot Coffee (₹45)</option>
+              <option value="Strong Choco Coffee" data-price="60">Strong Choco Coffee (₹60)</option>
+              <option value="Hot Choclate" data-price="60">Hot Choclate (₹60)</option>
+              <option value="Red Wine Coffee (Flavoured)" data-price="60">Red Wine Coffee (Flavoured) (₹60)</option>
+              <option value="Whiskey Coffee (Flavoured)" data-price="60">Whiskey Coffee (Flavoured) (₹60)</option>
+            </optgroup>
+            <optgroup label="Maggi & Munchies">
+              <option value="Plain Maggi" data-price="50">Plain Maggi (₹50)</option>
+              <option value="Double Masala Maggi" data-price="70">Double Masala Maggi (₹70)</option>
+              <option value="Schezwan Maggi" data-price="80">Schezwan Maggi (₹80)</option>
+              <option value="Tandoori Maggi" data-price="90">Tandoori Maggi (₹90)</option>
+              <option value="Vegetable Maggi" data-price="100">Vegetable Maggi (₹100)</option>
+              <option value="Corn Cheesey Maggi" data-price="120">Corn Cheesey Maggi (₹120)</option>
+              <option value="Cheese & Butter Maggi" data-price="130">Cheese & Butter Maggi (₹130)</option>
+              <option value="V Crispers" data-price="100">V Crispers (₹100)</option>
+              <option value="Cheesey Samosa" data-price="100">Cheesey Samosa (₹100)</option>
+              <option value="Garlic Pops" data-price="110">Garlic Pops (₹110)</option>
+              <option value="Potato Wedges" data-price="110">Potato Wedges (₹110)</option>
+              <option value="Veggie Nuggets" data-price="120">Veggie Nuggets (₹120)</option>
+              <option value="Chilli Cheesey Nuggets" data-price="140">Chilli Cheesey Nuggets (₹140)</option>
+            </optgroup>
+            <optgroup label="Pizzas & Burgers">
+              <option value="Margherita Pizza" data-price="120">Margherita Pizza (₹120)</option>
+              <option value="Veggie Paradise Pizza" data-price="140">Veggie Paradise Pizza (₹140)</option>
+              <option value="Golden Corn Pizza" data-price="150">Golden Corn Pizza (₹150)</option>
+              <option value="Veggie Farmhouse Pizza" data-price="200">Veggie Farmhouse Pizza (₹200)</option>
+              <option value="Tandoori Paneer Pizza" data-price="230">Tandoori Paneer Pizza (₹230)</option>
+              <option value="Makhni Mushroom Pizza" data-price="250">Makhni Mushroom Pizza (₹250)</option>
+              <option value="Studios Special Pizza" data-price="300">Studios Special Pizza (₹300)</option>
+              <option value="Veg Burger" data-price="70">Veg Burger (₹70)</option>
+              <option value="Veg Cheese Burger" data-price="90">Veg Cheese Burger (₹90)</option>
+              <option value="Paneer Delight Burger" data-price="100">Paneer Delight Burger (₹100)</option>
+              <option value="Cheese Paneer Burger" data-price="110">Cheese Paneer Burger (₹110)</option>
+              <option value="Spicy Tandoori Burger" data-price="120">Spicy Tandoori Burger (₹120)</option>
+            </optgroup>
+            <optgroup label="Sandwiches & Tit Bits">
+              <option value="Maska Bun" data-price="35">Maska Bun (₹35)</option>
+              <option value="Garlic Bun" data-price="40">Garlic Bun (₹40)</option>
+              <option value="Plain Garlic Bread" data-price="50">Plain Garlic Bread (₹50)</option>
+              <option value="Cheese Garlic Bread" data-price="70">Cheese Garlic Bread (₹70)</option>
+              <option value="French Fries" data-price="70">French Fries (₹70)</option>
+              <option value="Peri Peri Fries" data-price="80">Peri Peri Fries (₹80)</option>
+              <option value="Loaded Fries" data-price="160">Loaded Fries (₹160)</option>
+              <option value="Fruit Butter Sandwich" data-price="60">Fruit Butter Sandwich (₹60)</option>
+              <option value="Choco Grill Sandwich" data-price="70">Choco Grill Sandwich (₹70)</option>
+              <option value="Veggie Paradise Sandwich" data-price="80">Veggie Paradise Sandwich (₹80)</option>
+              <option value="Chilli Cheese Sandwich" data-price="85">Chilli Cheese Sandwich (₹85)</option>
+              <option value="Paneer Tikka Sandwich" data-price="100">Paneer Tikka Sandwich (₹100)</option>
+            </optgroup>
+            <optgroup label="Shakes & Mocktails">
+              <option value="Vanilla Shake" data-price="100">Vanilla Shake (₹100)</option>
+              <option value="Strawberry Shake" data-price="100">Strawberry Shake (₹100)</option>
+              <option value="Butter Scotch Shake" data-price="110">Butter Scotch Shake (₹110)</option>
+              <option value="Oreo Shake" data-price="120">Oreo Shake (₹120)</option>
+              <option value="Kit Kat Shake" data-price="120">Kit Kat Shake (₹120)</option>
+              <option value="Dairy Milk Shake" data-price="120">Dairy Milk Shake (₹120)</option>
+              <option value="Rasmalai Shake" data-price="130">Rasmalai Shake (₹130)</option>
+              <option value="Blueberry Cream Shake" data-price="140">Blueberry Cream Shake (₹140)</option>
+              <option value="Blueberry Slush" data-price="90">Blueberry Slush (₹90)</option>
+              <option value="Black Current Slush" data-price="90">Black Current Slush (₹90)</option>
+              <option value="Virgin Mojito" data-price="130">Virgin Mojito (₹130)</option>
+              <option value="Blue Lagoon" data-price="140">Blue Lagoon (₹140)</option>
+              <option value="Kala Khatta Gola Mocktail" data-price="160">Kala Khatta Gola Mocktail (₹160)</option>
+              <option value="Paan Patta Mojito" data-price="170">Paan Patta Mojito (₹170)</option>
+            </optgroup>
+            <optgroup label="Chinese & Desserts">
+              <option value="Veg Momos" data-price="70">Veg Momos (₹70)</option>
+              <option value="Paneer Momos" data-price="90">Paneer Momos (₹90)</option>
+              <option value="Veg Fried Momos" data-price="80">Veg Fried Momos (₹80)</option>
+              <option value="Paneer Fried Momos" data-price="100">Paneer Fried Momos (₹100)</option>
+              <option value="Spring Rolls" data-price="100">Spring Rolls (₹100)</option>
+              <option value="Hot Choco Brownie" data-price="70">Hot Choco Brownie (₹70)</option>
+              <option value="Brownie with Ice Cream" data-price="100">Brownie with Ice Cream (₹100)</option>
+              <option value="Corn Chat (Healthy Feast)" data-price="80">Corn Chat (Healthy Feast) (₹80)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sweetness-level">Sweetness</label>
+            <select id="sweetness-level">
+              <option value="Medium (Classic)">Medium (Classic)</option>
+              <option value="Kadak (Sweet)">Kadak (Extra Sweet)</option>
+              <option value="Fika (No Sugar)">Fika (Sugar Free)</option>
+              <option value="Organic Jaggery">Organic Jaggery (+₹10)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cup-qty">Quantity</label>
+            <div class="qty-control">
+              <button type="button" id="qty-minus" class="qty-btn">-</button>
+              <input type="number" id="cup-qty" value="1" min="1" max="20" readonly />
+              <button type="button" id="qty-plus" class="qty-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cust-name">Your Name</label>
+          <input type="text" id="cust-name" placeholder="e.g. Shivanshi" required />
+        </div>
+
+        <div class="form-group">
+          <label for="cust-phone">Contact Number / Table No.</label>
+          <input type="text" id="cust-phone" placeholder="e.g. +91 98765 43210 or Table 4" required />
+        </div>
+
+        <div class="order-summary-box">
+          <div class="summary-line">
+            <span>Price Per Cup</span>
+            <span id="summary-unit-price">₹80</span>
+          </div>
+          <div class="summary-line total">
+            <span>Estimated Total</span>
+            <span id="summary-total-price">₹80</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary w-full">Confirm & Brew Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ORDER SUCCESS TOAST -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <span class="toast-icon">✨</span>
+    <div class="toast-body">
+      <h4 class="toast-title" id="toast-title">Kulhad Order Confirmed!</h4>
+      <p class="toast-msg" id="toast-msg">The samovar is steaming. Your chai is brewing with fresh spices.</p>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+
+  <!-- PHYSICAL MENU CARD LIGHTBOX MODAL -->
+  <div id="menu-card-modal" class="modal-backdrop" aria-hidden="true" role="dialog"
+    aria-label="Official Menu Card Photo">
+    <div class="menu-lightbox-box">
+      <div class="lightbox-header">
+        <div class="flex items-center gap-3">
+          <img src="/logo.jpg" alt="Logo" class="w-8 h-8 rounded-full border border-gold object-cover" />
+          <div>
+            <h3 class="font-title-md text-title-md text-gold leading-tight">Official Printed Menu Card</h3>
+            <span class="text-xs text-cream-muted">The Chai Studio • Chai on Clicks • @thechaistudioindresh</span>
+          </div>
+        </div>
+        <button id="menu-card-close" class="modal-close-btn" aria-label="Close menu card preview">&times;</button>
+      </div>
+      <div class="menu-card-img-wrap">
+        <img src="/menu-card.jpg" alt="The Chai Studio Official Printed Menu Card" class="menu-card-full-img" />
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

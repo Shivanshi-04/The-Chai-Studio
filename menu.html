@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | The Chai Studio — Chai on Clicks Dehradun</title>
+  <meta name="description" content="Explore the official artisanal menu of The Chai Studio, Dehradun. Handcrafted kadak kulhad chais, specialty cold coffees, double masala Maggi, pizzas, burgers & shakes." />
+  <meta name="theme-color" content="#1c110c" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#fdb96e",
+          "surface": "#1c110c",
+          "on-surface": "#f5ded5",
+          "on-surface-variant": "#d6c3b3",
+          "outline": "#9e8e7f",
+          "surface-container-low": "#251914",
+          "surface-container": "#291d17",
+          "surface-container-high": "#342721",
+          "surface-container-highest": "#40322c",
+          "surface-container-lowest": "#160c07"
+        }
+      }
+    }
+  }</script>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="menu-page-body bg-[#1c110c] text-on-surface">
+
+  <!-- Top Native Scroll Progress -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Sticky Luxury Navigation Header -->
+  <header class="studio-header" id="navbar">
+    <div class="header-container">
+      <a href="/index.html" class="brand-logo" aria-label="The Chai Studio Home">
+        <div class="logo-symbol">
+          <img src="/logo.jpg" alt="The Chai Studio Emblem" class="brand-logo-img" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">THE CHAI STUDIO</span>
+          <span class="logo-tag">CHAI ON CLICKS</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="/index.html" class="nav-btn">Home</a>
+        <a href="/menu.html" class="nav-btn active">Menu</a>
+        <a href="/story.html" class="nav-btn">Our Story</a>
+        <a href="/about.html" class="nav-btn">About</a>
+        <a href="/contact.html" class="nav-btn">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btn-quick-order" class="btn-primary">
+          <span>Order Kulhad</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN MENU CONTENT -->
+  <main class="menu-page-main pt-24 pb-20">
+
+    <!-- Hero Banner -->
+    <section class="menu-hero-section relative overflow-hidden py-14 px-4 text-center">
+      <div class="max-w-4xl mx-auto flex flex-col items-center gap-4 relative z-10">
+        <span class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest text-primary bg-[#2a170f] border border-primary/30 shadow-md">
+          AUTHENTIC STUDIO KITCHEN • EST. DEHRADUN
+        </span>
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-[#f5ded5] tracking-tight leading-tight">
+          The Official Menu
+        </h1>
+        <p class="text-base sm:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          From slow-steeped earthen kulhad chais to thick artisan frappes, cheesy double masala Maggi, hand-stretched pizzas, and refreshing mocktails.
+        </p>
+
+        <!-- Stats Counter Pills -->
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2 text-xs sm:text-sm text-primary font-medium">
+          <span class="px-3.5 py-1.5 rounded-full bg-black/25 border border-primary/20">9 Earthen Kulhad Chais</span>
+          <span class="px-3.5 py-1.5 rounded-full bg-black/25 border border-primary/20">13 Cold Brews & Shakes</span>
+          <span class="px-3.5 py-1.5 rounded-full bg-black/25 border border-primary/20">Fresh Savouries & Munchies</span>
+          <span class="px-3.5 py-1.5 rounded-full bg-black/25 border border-primary/20">100% Whole Spices</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Filters & Search Header -->
+    <section class="sticky-filter-wrapper sticky top-16 z-30 bg-[#1c110c]/95 backdrop-blur-md border-y border-outline/20 py-4 shadow-xl">
+      <div class="max-w-[1320px] mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        
+        <!-- Category Tab Buttons -->
+        <div class="menu-tabs-bar mb-0 overflow-x-auto flex items-center gap-2 pb-1" role="tablist">
+          <button class="menu-tab-btn active" data-filter="all">All Items</button>
+          <button class="menu-tab-btn" data-filter="chai">Tea (9)</button>
+          <button class="menu-tab-btn" data-filter="coffee">Coffee (13)</button>
+          <button class="menu-tab-btn" data-filter="maggi">Maggi (13)</button>
+          <button class="menu-tab-btn" data-filter="pizza">Pizzas (7)</button>
+          <button class="menu-tab-btn" data-filter="burger">Burgers (5)</button>
+          <button class="menu-tab-btn" data-filter="sandwich">Sandwiches (12)</button>
+          <button class="menu-tab-btn" data-filter="drinks">Shakes & Slushes (14)</button>
+          <button class="menu-tab-btn" data-filter="chinese">Chinese & Dessert (8)</button>
+        </div>
+
+        <!-- Live Instant Search -->
+        <div class="relative w-full md:w-72 shrink-0">
+          <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary text-[18px]">search</span>
+          <input 
+            type="text" 
+            id="menu-search-input" 
+            placeholder="Search chai, coffee, pizza..." 
+            class="w-full bg-black/30 border border-outline/30 rounded-full pl-9 pr-4 py-2 text-sm text-[#f5ded5] placeholder-outline focus:outline-none focus:border-primary transition-colors"
+          />
+          <button id="search-clear-btn" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-xs text-outline hover:text-primary">&times;</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Menu Items Container -->
+    <section class="max-w-[1320px] mx-auto px-4 md:px-8 pt-8">
+      
+      <!-- Search result status -->
+      <div id="search-status-bar" class="hidden pb-4 text-sm text-primary font-medium flex items-center justify-between">
+        <span id="search-status-text">Showing matches</span>
+        <button id="btn-reset-filters" class="underline text-xs hover:text-white">Reset Filters</button>
+      </div>
+
+      <!-- Artisanal Category Showcase Sections (Photo Anchor + Varieties Near It) -->
+      <div id="menu-sections-wrapper" class="menu-sections-wrapper">
+    <!-- Category: Tea & Kulhad Chai -->
+    <section class="category-showcase-section" id="cat-chai" data-category="chai">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-tea-cup.jpg" 
+              alt="Steaming Indian chai tea cup on rustic wooden table with spices" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Artisanal Teas</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Tea & Kulhad Chai</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Clay-Steeped • Assam CTC & Mountain Herbs</p>
+            <p class="category-feature-desc">Slow-brewed over mountain embers with whole spices, creamy dairy, and aromatic mountain herbs.</p>
+            <div class="category-feature-meta">
+              <span>9 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="chai" data-name="chocolate tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Chocolate Tea</h3>
+              <span class="fmi-origin">Regular ₹35 • Large ₹65</span>
+            </div>
+            <span class="fmi-price">₹35</span>
+          </div>
+          <p class="fmi-desc">Rich cocoa notes simmered with Kadak Assam CTC</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Chocolate Tea" data-price="35">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="adrak tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Adrak Tea</h3>
+              <span class="fmi-origin">Regular ₹35 • Large ₹65</span>
+            </div>
+            <span class="fmi-price">₹35</span>
+          </div>
+          <p class="fmi-desc">Crushed mountain ginger boiled over slow embers</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Adrak Tea" data-price="35">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="rose tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Rose Tea</h3>
+              <span class="fmi-origin">Regular ₹35 • Large ₹65</span>
+            </div>
+            <span class="fmi-price">₹35</span>
+          </div>
+          <p class="fmi-desc">Fragrant Kannauj rose petals infused in sweet milk</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Rose Tea" data-price="35">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="kesar tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Kesar Tea</h3>
+              <span class="fmi-origin">Regular ₹40 • Large ₹70</span>
+            </div>
+            <span class="fmi-price">₹40</span>
+          </div>
+          <p class="fmi-desc">Pampore saffron stigma strands with creamy milk</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Kesar Tea" data-price="40">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="elaichi tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Elaichi Tea</h3>
+              <span class="fmi-origin">Regular ₹40 • Large ₹70</span>
+            </div>
+            <span class="fmi-price">₹40</span>
+          </div>
+          <p class="fmi-desc">Stone-pounded green cardamom with velvety body</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Elaichi Tea" data-price="40">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="masala tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Masala Tea</h3>
+              <span class="fmi-origin">Regular ₹40 • Large ₹70</span>
+            </div>
+            <span class="fmi-price">₹40</span>
+          </div>
+          <p class="fmi-desc">Traditional blend of 7 hand-ground spices</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Masala Tea" data-price="40">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="pan tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Pan Tea</h3>
+              <span class="fmi-origin">Regular ₹40 • Large ₹70</span>
+            </div>
+            <span class="fmi-price">₹40</span>
+          </div>
+          <p class="fmi-desc">Desi betel leaf infusion with cooling sweet notes</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Pan Tea" data-price="40">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="mawa tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Mawa Tea</h3>
+              <span class="fmi-origin">Regular ₹40 • Large ₹70</span>
+            </div>
+            <span class="fmi-price">₹40</span>
+          </div>
+          <p class="fmi-desc">Caramelized reduced milk solids for dense richness</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Mawa Tea" data-price="40">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chai" data-name="lemon tea">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Lemon Tea</h3>
+              <span class="fmi-origin">Regular ₹40 • Large ₹70</span>
+            </div>
+            <span class="fmi-price">₹40</span>
+          </div>
+          <p class="fmi-desc">Clear infusion with fresh lemon juice and honey</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chai (Hot Brews)</span>
+            <button class="btn-order-item" data-item="Lemon Tea" data-price="40">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category: Specialty Cold Coffee -->
+    <section class="category-showcase-section" id="cat-coffee" data-category="coffee">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-cold-coffee.jpg" 
+              alt="Artisanal iced cold coffee with velvety froth and chocolate drizzle" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Chilled Roasts</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Specialty Cold Coffee</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Barista Shaken • Arabica & Robusta Blends</p>
+            <p class="category-feature-desc">Rich espresso roasts shaken with chilled milk, thick vanilla creams, and decadent chocolate swirls.</p>
+            <div class="category-feature-meta">
+              <span>13 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="coffee" data-name="classic cold coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Classic Cold Coffee</h3>
+              <span class="fmi-origin">Thick & Frothy</span>
+            </div>
+            <span class="fmi-price">₹90</span>
+          </div>
+          <p class="fmi-desc">Espresso blended with full-cream milk and ice</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Classic Cold Coffee" data-price="90">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="choco cold coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Choco Cold Coffee</h3>
+              <span class="fmi-origin">Chocolate Drizzle</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Cold brew with dark Hershey's cocoa swirl</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Choco Cold Coffee" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="strong cold coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Strong Cold Coffee</h3>
+              <span class="fmi-origin">Double Espresso</span>
+            </div>
+            <span class="fmi-price">₹110</span>
+          </div>
+          <p class="fmi-desc">Extra caffeine kick for intense coffee lovers</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Strong Cold Coffee" data-price="110">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="cold coffee with ice cream">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Cold Coffee with Ice Cream</h3>
+              <span class="fmi-origin">Vanilla Scoop</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Topped with artisanal rich vanilla bean ice cream</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Cold Coffee with Ice Cream" data-price="120">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="brownie cold coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Brownie Cold Coffee</h3>
+              <span class="fmi-origin">Crushed Brownie</span>
+            </div>
+            <span class="fmi-price">₹130</span>
+          </div>
+          <p class="fmi-desc">Fudge brownie blended into creamy cold coffee</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Brownie Cold Coffee" data-price="130">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="hazelnut creame cold coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Hazelnut Creame Cold Coffee</h3>
+              <span class="fmi-origin">Roasted Hazelnut</span>
+            </div>
+            <span class="fmi-price">₹150</span>
+          </div>
+          <p class="fmi-desc">Velvety nutty richness with sweet hazelnut cream</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Hazelnut Creame Cold Coffee" data-price="150">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="irish creame cold coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Irish Creame Cold Coffee</h3>
+              <span class="fmi-origin">Irish Mocha Notes</span>
+            </div>
+            <span class="fmi-price">₹150</span>
+          </div>
+          <p class="fmi-desc">Classic non-alcoholic Irish cream notes</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Irish Creame Cold Coffee" data-price="150">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="caramel creame cold coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Caramel Creame Cold Coffee</h3>
+              <span class="fmi-origin">Golden Caramel</span>
+            </div>
+            <span class="fmi-price">₹160</span>
+          </div>
+          <p class="fmi-desc">Buttery salted caramel sauce layered with espresso</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Caramel Creame Cold Coffee" data-price="160">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="hot coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Hot Coffee</h3>
+              <span class="fmi-origin">Regular ₹45 • Large ₹80</span>
+            </div>
+            <span class="fmi-price">₹45</span>
+          </div>
+          <p class="fmi-desc">Steaming frothed espresso with whole milk</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Hot Coffee" data-price="45">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="strong choco coffee">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Strong Choco Coffee</h3>
+              <span class="fmi-origin">Regular ₹60 • Large ₹120</span>
+            </div>
+            <span class="fmi-price">₹60</span>
+          </div>
+          <p class="fmi-desc">Bold espresso meets bittersweet dark chocolate</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Strong Choco Coffee" data-price="60">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="hot choclate">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Hot Choclate</h3>
+              <span class="fmi-origin">Regular ₹60 • Large ₹100</span>
+            </div>
+            <span class="fmi-price">₹60</span>
+          </div>
+          <p class="fmi-desc">Melted velvety chocolate with steamed creamy milk</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Hot Choclate" data-price="60">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="red wine coffee (flavoured)">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Red Wine Coffee (Flavoured)</h3>
+              <span class="fmi-origin">Hot ₹60 / Cold ₹120</span>
+            </div>
+            <span class="fmi-price">₹60</span>
+          </div>
+          <p class="fmi-desc">Exotic rich grape and berry notes infusion</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Red Wine Coffee (Flavoured)" data-price="60">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="coffee" data-name="whiskey coffee (flavoured)">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Whiskey Coffee (Flavoured)</h3>
+              <span class="fmi-origin">Hot ₹60 / Cold ₹120</span>
+            </div>
+            <span class="fmi-price">₹60</span>
+          </div>
+          <p class="fmi-desc">Smoky oak barrel notes blended in dark espresso</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Coffee & Cold Brews</span>
+            <button class="btn-order-item" data-item="Whiskey Coffee (Flavoured)" data-price="60">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category: Signature Maggi & Munchies -->
+    <section class="category-showcase-section" id="cat-maggi" data-category="maggi">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-cheese-maggi.jpg" 
+              alt="Steaming bowl of spicy cheese Maggi noodles with vegetables and herbs" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Mountain Comfort</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Signature Maggi & Munchies</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Street Style • Double Masala Broth</p>
+            <p class="category-feature-desc">Piping hot mountain noodles cooked with fragrant spices, melted butter, vegetables, and gooey cheese.</p>
+            <div class="category-feature-meta">
+              <span>13 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="maggi" data-name="plain maggi">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Plain Maggi</h3>
+              <span class="fmi-origin">Classic Noodle</span>
+            </div>
+            <span class="fmi-price">₹50</span>
+          </div>
+          <p class="fmi-desc">Classic 2-minute street style comfort</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Plain Maggi" data-price="50">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="double masala maggi">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Double Masala Maggi</h3>
+              <span class="fmi-origin">Extra Spicy</span>
+            </div>
+            <span class="fmi-price">₹70</span>
+          </div>
+          <p class="fmi-desc">Extra tastemaker with desi butter tadka</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Double Masala Maggi" data-price="70">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="schezwan maggi">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Schezwan Maggi</h3>
+              <span class="fmi-origin">Spicy Schezwan</span>
+            </div>
+            <span class="fmi-price">₹80</span>
+          </div>
+          <p class="fmi-desc">Tossed in fiery homemade Schezwan sauce</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Schezwan Maggi" data-price="80">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="tandoori maggi">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Tandoori Maggi</h3>
+              <span class="fmi-origin">Smoked Embers</span>
+            </div>
+            <span class="fmi-price">₹90</span>
+          </div>
+          <p class="fmi-desc">Smoky tandoori seasoning and fresh bell peppers</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Tandoori Maggi" data-price="90">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="vegetable maggi">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Vegetable Maggi</h3>
+              <span class="fmi-origin">Loaded Veggies</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Carrots, peas, capsicum, onions and sweet corn</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Vegetable Maggi" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="corn cheesey maggi">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Corn Cheesey Maggi</h3>
+              <span class="fmi-origin">Melted Cheese</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Golden sweet corn kernels smothered in mozzarella</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Corn Cheesey Maggi" data-price="120">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="cheese & butter maggi">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Cheese & Butter Maggi</h3>
+              <span class="fmi-origin">Double Dairy</span>
+            </div>
+            <span class="fmi-price">₹130</span>
+          </div>
+          <p class="fmi-desc">Amul butter block melted into gooey cheddar</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Cheese & Butter Maggi" data-price="130">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="v crispers">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">V Crispers</h3>
+              <span class="fmi-origin">V-Cut Crisp</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">V-shaped crunchy golden potato crispers</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="V Crispers" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="cheesey samosa">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Cheesey Samosa</h3>
+              <span class="fmi-origin">4 Pieces</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Crispy mini samosas filled with molten spiced cheese</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Cheesey Samosa" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="garlic pops">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Garlic Pops</h3>
+              <span class="fmi-origin">Bite Sized</span>
+            </div>
+            <span class="fmi-price">₹110</span>
+          </div>
+          <p class="fmi-desc">Crunchy potato garlic bites with herbal seasoning</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Garlic Pops" data-price="110">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="potato wedges">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Potato Wedges</h3>
+              <span class="fmi-origin">Skin-on Herbs</span>
+            </div>
+            <span class="fmi-price">₹110</span>
+          </div>
+          <p class="fmi-desc">Thick hand-cut potato wedges dusted in paprika</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Potato Wedges" data-price="110">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="veggie nuggets">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veggie Nuggets</h3>
+              <span class="fmi-origin">6 Pieces</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Golden fried vegetable nuggets with sweet chili dip</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Veggie Nuggets" data-price="120">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="maggi" data-name="chilli cheesey nuggets">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Chilli Cheesey Nuggets</h3>
+              <span class="fmi-origin">Hot Molten</span>
+            </div>
+            <span class="fmi-price">₹140</span>
+          </div>
+          <p class="fmi-desc">Jalapeno and melted cheddar nuggets</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Maggi & Munchies</span>
+            <button class="btn-order-item" data-item="Chilli Cheesey Nuggets" data-price="140">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category: Hand-Stretched Pizzas -->
+    <section class="category-showcase-section" id="cat-pizza" data-category="pizza">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-paneer-pizza.jpg" 
+              alt="Freshly baked artisanal pizza with paneer, capsicum, olives, and melting cheese" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Italian Crust</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Hand-Stretched Pizzas</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Stone-Baked • 100% Mozzarella</p>
+            <p class="category-feature-desc">Crispy thin crust hand-stretched dough layered with herbed marinara, crisp vegetables, and golden mozzarella.</p>
+            <div class="category-feature-meta">
+              <span>7 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="pizza" data-name="margherita pizza">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Margherita Pizza</h3>
+              <span class="fmi-origin">Single Cheese</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Herbed tomato sauce base with 100% fresh mozzarella</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Pizzas & Burgers</span>
+            <button class="btn-order-item" data-item="Margherita Pizza" data-price="120">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="pizza" data-name="veggie paradise pizza">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veggie Paradise Pizza</h3>
+              <span class="fmi-origin">Fresh Farm</span>
+            </div>
+            <span class="fmi-price">₹140</span>
+          </div>
+          <p class="fmi-desc">Capsicum, onion, tomato, olives and dried oregano</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Pizzas & Burgers</span>
+            <button class="btn-order-item" data-item="Veggie Paradise Pizza" data-price="140">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="pizza" data-name="golden corn pizza">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Golden Corn Pizza</h3>
+              <span class="fmi-origin">Sweet & Cheesy</span>
+            </div>
+            <span class="fmi-price">₹150</span>
+          </div>
+          <p class="fmi-desc">Juicy golden American sweet corn with double cheese</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Pizzas & Burgers</span>
+            <button class="btn-order-item" data-item="Golden Corn Pizza" data-price="150">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="pizza" data-name="veggie farmhouse pizza">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veggie Farmhouse Pizza</h3>
+              <span class="fmi-origin">Chef's Special</span>
+            </div>
+            <span class="fmi-price">₹200</span>
+          </div>
+          <p class="fmi-desc">Loaded with mushrooms, bell peppers, onions and olives</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Pizzas & Burgers</span>
+            <button class="btn-order-item" data-item="Veggie Farmhouse Pizza" data-price="200">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="pizza" data-name="tandoori paneer pizza">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Tandoori Paneer Pizza</h3>
+              <span class="fmi-origin">Tandoori Spiced</span>
+            </div>
+            <span class="fmi-price">₹230</span>
+          </div>
+          <p class="fmi-desc">Marinated cottage cheese cubes in spicy tandoori sauce</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Pizzas & Burgers</span>
+            <button class="btn-order-item" data-item="Tandoori Paneer Pizza" data-price="230">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="pizza" data-name="makhni mushroom pizza">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Makhni Mushroom Pizza</h3>
+              <span class="fmi-origin">Makhni Gravy</span>
+            </div>
+            <span class="fmi-price">₹250</span>
+          </div>
+          <p class="fmi-desc">Button mushrooms in rich buttery makhni gravy</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Pizzas & Burgers</span>
+            <button class="btn-order-item" data-item="Makhni Mushroom Pizza" data-price="250">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="pizza" data-name="studios special pizza">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Studios Special Pizza</h3>
+              <span class="fmi-origin">House Signature</span>
+            </div>
+            <span class="fmi-price">₹300</span>
+          </div>
+          <p class="fmi-desc">The supreme loaded delight with all toppings & extra cheese</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Pizzas & Burgers</span>
+            <button class="btn-order-item" data-item="Studios Special Pizza" data-price="300">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category: Gourmet Burgers -->
+    <section class="category-showcase-section" id="cat-burger" data-category="burger">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-burger.jpg" 
+              alt="Towering gourmet artisan burger with melting cheese slice, crisp patty, and fresh veggies" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Studio Burgers</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Gourmet Burgers</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Toasted Brioche • Crispy Herb Patties</p>
+            <p class="category-feature-desc">Golden toasted sesame buns stuffed with spiced herb patties, melted cheddar slices, and house sauces.</p>
+            <div class="category-feature-meta">
+              <span>5 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="burger" data-name="veg burger">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veg Burger</h3>
+              <span class="fmi-origin">Crisp Patty</span>
+            </div>
+            <span class="fmi-price">₹70</span>
+          </div>
+          <p class="fmi-desc">Crispy spiced vegetable patty with house garlic mayo</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Gourmet Burgers</span>
+            <button class="btn-order-item" data-item="Veg Burger" data-price="70">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="burger" data-name="veg cheese burger">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veg Cheese Burger</h3>
+              <span class="fmi-origin">Cheese Slice</span>
+            </div>
+            <span class="fmi-price">₹90</span>
+          </div>
+          <p class="fmi-desc">Vegetable patty with melting cheese slice & lettuce</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Gourmet Burgers</span>
+            <button class="btn-order-item" data-item="Veg Cheese Burger" data-price="90">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="burger" data-name="paneer delight burger">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Paneer Delight Burger</h3>
+              <span class="fmi-origin">Grilled Paneer</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Herb-crusted cottage cheese patty with mint mayo</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Gourmet Burgers</span>
+            <button class="btn-order-item" data-item="Paneer Delight Burger" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="burger" data-name="cheese paneer burger">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Cheese Paneer Burger</h3>
+              <span class="fmi-origin">Double Layer</span>
+            </div>
+            <span class="fmi-price">₹110</span>
+          </div>
+          <p class="fmi-desc">Paneer block, cheddar slice, gherkins and onions</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Gourmet Burgers</span>
+            <button class="btn-order-item" data-item="Cheese Paneer Burger" data-price="110">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="burger" data-name="spicy tandoori burger">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Spicy Tandoori Burger</h3>
+              <span class="fmi-origin">Fiery Sauce</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Smoky tandoori seasoning with crunchy vegetable patty</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Gourmet Burgers</span>
+            <button class="btn-order-item" data-item="Spicy Tandoori Burger" data-price="120">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category: Toasted Sandwiches & Buns -->
+    <section class="category-showcase-section" id="cat-sandwich" data-category="sandwich">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-sandwich.jpg" 
+              alt="Crispy golden grilled sandwich halves with melting cheese pull and fresh herbs" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Crispy Bites</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Toasted Sandwiches & Buns</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Golden Grilled • Irani & Continental</p>
+            <p class="category-feature-desc">Crispy golden grilled breads stuffed with farm-fresh vegetables, paneer tikka, and warm Irani maska buns.</p>
+            <div class="category-feature-meta">
+              <span>12 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="sandwich" data-name="maska bun">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Maska Bun</h3>
+              <span class="fmi-origin">Irani Heritage</span>
+            </div>
+            <span class="fmi-price">₹35</span>
+          </div>
+          <p class="fmi-desc">Warm soft bun toasted with a thick slab of butter</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Maska Bun" data-price="35">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="garlic bun">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Garlic Bun</h3>
+              <span class="fmi-origin">Herbed Garlic</span>
+            </div>
+            <span class="fmi-price">₹40</span>
+          </div>
+          <p class="fmi-desc">Soft bun toasted with garlic herb butter</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Garlic Bun" data-price="40">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="plain garlic bread">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Plain Garlic Bread</h3>
+              <span class="fmi-origin">3 Slices</span>
+            </div>
+            <span class="fmi-price">₹50</span>
+          </div>
+          <p class="fmi-desc">Toasted baguette slices with infused garlic butter</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Plain Garlic Bread" data-price="50">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="cheese garlic bread">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Cheese Garlic Bread</h3>
+              <span class="fmi-origin">Melted Mozzarella</span>
+            </div>
+            <span class="fmi-price">₹70</span>
+          </div>
+          <p class="fmi-desc">Golden toasted garlic bread loaded with stringy cheese</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Cheese Garlic Bread" data-price="70">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="french fries">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">French Fries</h3>
+              <span class="fmi-origin">Golden Salted</span>
+            </div>
+            <span class="fmi-price">₹70</span>
+          </div>
+          <p class="fmi-desc">Crispy salted potato fries served with dip</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="French Fries" data-price="70">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="peri peri fries">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Peri Peri Fries</h3>
+              <span class="fmi-origin">African Bird's Eye</span>
+            </div>
+            <span class="fmi-price">₹80</span>
+          </div>
+          <p class="fmi-desc">Tossed in fiery tangy peri-peri seasoning</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Peri Peri Fries" data-price="80">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="loaded fries">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Loaded Fries</h3>
+              <span class="fmi-origin">Cheese & Jalapeno</span>
+            </div>
+            <span class="fmi-price">₹160</span>
+          </div>
+          <p class="fmi-desc">Fries smothered in liquid cheese, jalapeños & herbs</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Loaded Fries" data-price="160">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="fruit butter sandwich">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Fruit Butter Sandwich</h3>
+              <span class="fmi-origin">Sweet & Fresh</span>
+            </div>
+            <span class="fmi-price">₹60</span>
+          </div>
+          <p class="fmi-desc">Seasonal fruit slices with whipped sweet butter</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Fruit Butter Sandwich" data-price="60">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="choco grill sandwich">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Choco Grill Sandwich</h3>
+              <span class="fmi-origin">Molten Dark Choco</span>
+            </div>
+            <span class="fmi-price">₹70</span>
+          </div>
+          <p class="fmi-desc">Grilled sandwich oozing with melted chocolate chips</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Choco Grill Sandwich" data-price="70">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="veggie paradise sandwich">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veggie Paradise Sandwich</h3>
+              <span class="fmi-origin">Triple Layer</span>
+            </div>
+            <span class="fmi-price">₹80</span>
+          </div>
+          <p class="fmi-desc">Fresh cucumbers, tomatoes, capsicum and mint chutney</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Veggie Paradise Sandwich" data-price="80">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="chilli cheese sandwich">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Chilli Cheese Sandwich</h3>
+              <span class="fmi-origin">Green Chilies</span>
+            </div>
+            <span class="fmi-price">₹85</span>
+          </div>
+          <p class="fmi-desc">Green chili peppers with molten cheese grilled crisp</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Chilli Cheese Sandwich" data-price="85">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="sandwich" data-name="paneer tikka sandwich">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Paneer Tikka Sandwich</h3>
+              <span class="fmi-origin">Tandoori Paneer</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Charcoal grilled paneer chunks in spicy mint sauce</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Sandwiches & Tit Bits</span>
+            <button class="btn-order-item" data-item="Paneer Tikka Sandwich" data-price="100">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category: Shakes & Chilled Slushes -->
+    <section class="category-showcase-section" id="cat-drinks" data-category="drinks">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-shakes.jpg" 
+              alt="Decadent chocolate Oreo milkshake beside a vibrant icy blue fruit slush with mint" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Cool Refreshers</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Shakes & Chilled Slushes</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Whipped Dairy Cream • Frosty Crushed Ice</p>
+            <p class="category-feature-desc">Velvety whipped milkshakes topped with rich cream, alongside frosty crushed-ice fruit slushes and mojitos.</p>
+            <div class="category-feature-meta">
+              <span>14 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="drinks" data-name="vanilla shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Vanilla Shake</h3>
+              <span class="fmi-origin">Classic Vanilla</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Creamy vanilla whole milk shake</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Vanilla Shake" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="strawberry shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Strawberry Shake</h3>
+              <span class="fmi-origin">Pink Berry</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Strawberry purees whipped with sweet cream</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Strawberry Shake" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="butter scotch shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Butter Scotch Shake</h3>
+              <span class="fmi-origin">Crunchy Praline</span>
+            </div>
+            <span class="fmi-price">₹110</span>
+          </div>
+          <p class="fmi-desc">Butterscotch crunch with rich caramel milk</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Butter Scotch Shake" data-price="110">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="oreo shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Oreo Shake</h3>
+              <span class="fmi-origin">Cookies & Cream</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Crushed Oreo biscuits blended into thick cream</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Oreo Shake" data-price="120">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="kit kat shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Kit Kat Shake</h3>
+              <span class="fmi-origin">Crispy Wafers</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Chunky KitKat chocolate wafer fingers blended thick</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Kit Kat Shake" data-price="120">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="dairy milk shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Dairy Milk Shake</h3>
+              <span class="fmi-origin">Cadbury Silk</span>
+            </div>
+            <span class="fmi-price">₹120</span>
+          </div>
+          <p class="fmi-desc">Melted Cadbury Dairy Milk chocolate shake</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Dairy Milk Shake" data-price="120">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="rasmalai shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Rasmalai Shake</h3>
+              <span class="fmi-origin">Royal Saffron</span>
+            </div>
+            <span class="fmi-price">₹130</span>
+          </div>
+          <p class="fmi-desc">Artisanal saffron cardamom milk with rasmalai chunks</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Rasmalai Shake" data-price="130">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="blueberry cream shake">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Blueberry Cream Shake</h3>
+              <span class="fmi-origin">Wild Blueberries</span>
+            </div>
+            <span class="fmi-price">₹140</span>
+          </div>
+          <p class="fmi-desc">Sweet tart blueberries whipped with thick ice cream</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Blueberry Cream Shake" data-price="140">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="blueberry slush">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Blueberry Slush</h3>
+              <span class="fmi-origin">Crushed Ice</span>
+            </div>
+            <span class="fmi-price">₹90</span>
+          </div>
+          <p class="fmi-desc">Chilled icy slush infused with wild blueberry syrup</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Blueberry Slush" data-price="90">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="black current slush">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Black Current Slush</h3>
+              <span class="fmi-origin">Tangy Berry</span>
+            </div>
+            <span class="fmi-price">₹90</span>
+          </div>
+          <p class="fmi-desc">Refreshing crushed ice with black currant syrup</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Black Current Slush" data-price="90">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="virgin mojito">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Virgin Mojito</h3>
+              <span class="fmi-origin">Mint & Lime</span>
+            </div>
+            <span class="fmi-price">₹130</span>
+          </div>
+          <p class="fmi-desc">Fresh muddled garden mint, sparkling soda, lime & rock sugar</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Virgin Mojito" data-price="130">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="blue lagoon">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Blue Lagoon</h3>
+              <span class="fmi-origin">Citrus Curaçao</span>
+            </div>
+            <span class="fmi-price">₹140</span>
+          </div>
+          <p class="fmi-desc">Blue curaçao syrup, lemon juice and sparkling soda</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Blue Lagoon" data-price="140">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="kala khatta gola mocktail">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Kala Khatta Gola Mocktail</h3>
+              <span class="fmi-origin">Desi Nostalgia</span>
+            </div>
+            <span class="fmi-price">₹160</span>
+          </div>
+          <p class="fmi-desc">Tangy jamun syrup with black salt, cumin and lemon</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Kala Khatta Gola Mocktail" data-price="160">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="drinks" data-name="paan patta mojito">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Paan Patta Mojito</h3>
+              <span class="fmi-origin">Betel Infusion</span>
+            </div>
+            <span class="fmi-price">₹170</span>
+          </div>
+          <p class="fmi-desc">Fresh Calcutta paan leaf muddled with gulkand and fizz</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Shakes & Mocktails</span>
+            <button class="btn-order-item" data-item="Paan Patta Mojito" data-price="170">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category: Chinese & Desserts -->
+    <section class="category-showcase-section" id="cat-chinese" data-category="chinese">
+      <div class="category-showcase-layout">
+        
+        <!-- Showcase Anchor Card (Photo + Category Info) -->
+        <div class="category-feature-card">
+          <div class="category-feature-img-wrapper">
+            <img 
+              src="/menu-chinese-dessert.jpg" 
+              alt="Steaming handmade dumplings in bamboo steamer beside a sizzling brownie with vanilla ice cream" 
+              class="category-feature-img"
+              loading="lazy" 
+            />
+            <div class="category-feature-overlay">
+              <span class="category-badge-pill">Steamed & Sweet</span>
+            </div>
+          </div>
+          <div class="category-feature-body">
+            <h2 class="category-feature-title">Chinese & Desserts</h2>
+            <p class="category-feature-tagline text-xs font-semibold uppercase tracking-wider text-primary/90">Handmade Momos • Sizzling Walnut Brownies</p>
+            <p class="category-feature-desc">Delicate thin-wrapper steamed & fried Himalayan momos alongside sizzling warm walnut brownies.</p>
+            <div class="category-feature-meta">
+              <span>8 Signature Varieties</span>
+              <span class="text-xs uppercase tracking-widest text-outline">Fresh To Order</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Varieties List/Grid beside the Photo -->
+        <div class="category-varieties-container">
+          <div class="category-varieties-grid">
+        <div class="full-menu-item" data-category="chinese" data-name="veg momos">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veg Momos</h3>
+              <span class="fmi-origin">Steamed 6 Pcs</span>
+            </div>
+            <span class="fmi-price">₹70</span>
+          </div>
+          <p class="fmi-desc">Thin wrapper stuffed with finely minced seasoned cabbage & carrots</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Veg Momos" data-price="70">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chinese" data-name="paneer momos">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Paneer Momos</h3>
+              <span class="fmi-origin">Steamed 6 Pcs</span>
+            </div>
+            <span class="fmi-price">₹90</span>
+          </div>
+          <p class="fmi-desc">Juicy cottage cheese, spring onions and garlic filling</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Paneer Momos" data-price="90">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chinese" data-name="veg fried momos">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Veg Fried Momos</h3>
+              <span class="fmi-origin">Golden Crispy</span>
+            </div>
+            <span class="fmi-price">₹80</span>
+          </div>
+          <p class="fmi-desc">Crispy deep-fried momos served with fiery red chutney</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Veg Fried Momos" data-price="80">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chinese" data-name="paneer fried momos">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Paneer Fried Momos</h3>
+              <span class="fmi-origin">Crispy Paneer</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Fried to a golden crunch with creamy paneer inside</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Paneer Fried Momos" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chinese" data-name="spring rolls">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Spring Rolls</h3>
+              <span class="fmi-origin">Crispy Rolls</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Hand-rolled golden pastry stuffed with stir-fry vegetables</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Spring Rolls" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chinese" data-name="hot choco brownie">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Hot Choco Brownie</h3>
+              <span class="fmi-origin">Warm Sizzling</span>
+            </div>
+            <span class="fmi-price">₹70</span>
+          </div>
+          <p class="fmi-desc">Warm dense chocolate walnut brownie with chocolate fudge</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Hot Choco Brownie" data-price="70">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chinese" data-name="brownie with ice cream">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Brownie with Ice Cream</h3>
+              <span class="fmi-origin">Hot & Cold Pair</span>
+            </div>
+            <span class="fmi-price">₹100</span>
+          </div>
+          <p class="fmi-desc">Sizzling warm brownie topped with a scoop of vanilla ice cream</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Brownie with Ice Cream" data-price="100">Order</button>
+          </div>
+        </div>
+        <div class="full-menu-item" data-category="chinese" data-name="corn chat (healthy feast)">
+          <div class="fmi-header">
+            <div class="fmi-info">
+              <h3 class="fmi-name">Corn Chat (Healthy Feast)</h3>
+              <span class="fmi-origin">Steamed Sweet Corn</span>
+            </div>
+            <span class="fmi-price">₹80</span>
+          </div>
+          <p class="fmi-desc">Healthy boiled corn tossed with chaat masala, lemon and herbs</p>
+          <div class="fmi-footer">
+            <span class="fmi-badge">Chinese & Desserts</span>
+            <button class="btn-order-item" data-item="Corn Chat (Healthy Feast)" data-price="80">Order</button>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+      </div>
+
+      <!-- Empty Search Fallback -->
+      <div id="empty-search-state" class="hidden py-20 text-center flex flex-col items-center gap-3">
+        <span class="material-symbols-outlined text-5xl text-primary/70">search_off</span>
+        <h3 class="font-serif text-2xl text-[#f5ded5]">No items match your search</h3>
+        <p class="text-sm text-on-surface-variant max-w-md">Try searching for ingredients like "cardamom", "cheese", "hazelnut", or reset your category filters.</p>
+        <button id="btn-empty-reset" class="btn-primary mt-2">View All Items</button>
+      </div>
+
+    </section>
+
+    <!-- Quick Ordering Banner -->
+    <section class="max-w-[1320px] mx-auto px-4 md:px-8 mt-16">
+      <div class="p-6 md:p-10 rounded-3xl bg-black/40 border border-primary/25 backdrop-blur-md flex flex-col lg:flex-row items-center justify-between gap-6 shadow-2xl">
+        <div class="flex items-center gap-4 text-center lg:text-left">
+          <div class="w-14 h-14 rounded-full bg-primary/15 flex items-center justify-center text-primary shrink-0 hidden sm:flex">
+            <span class="material-symbols-outlined text-[30px]">local_cafe</span>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="font-serif text-2xl md:text-3xl font-bold text-[#f5ded5]">Visiting the Studio or Ordering for Pickup?</h3>
+            <p class="text-sm text-on-surface-variant mt-1">LD Tower, Mothorwala Road, near Bangali Kothi Chowk, Banjarawala, Dehradun. Open daily 10:00 AM – 11:30 PM.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full lg:w-auto">
+          <a class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#341b12] text-on-surface font-semibold text-sm border border-primary/30 hover:bg-[#4a2618] transition-colors" href="https://www.google.com/maps/search/?api=1&query=LD+Tower,+Mothorwala+Road,+near+Bangali+Kothi+Chowk,+Banjarawala,+Dehradun,+Uttarakhand+248121" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px]">directions</span>
+            <span>Get Directions</span>
+          </a>
+          <a class="flex-1 lg:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-[#120a05] font-bold text-sm hover:bg-white transition-colors shadow-lg" href="tel:+911149823310">
+            <span class="material-symbols-outlined text-[18px]">call</span>
+            <span>Call +91 11 4982 3310</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-[#160c07] border-t border-primary/20 text-on-surface pt-12 pb-8">
+    <div class="max-w-[1320px] mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10">
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3">
+            <img src="/logo.jpg" alt="The Chai Studio Emblem" class="w-12 h-12 rounded-full object-cover border border-primary/40 shadow-md" />
+            <div class="flex flex-col">
+              <span class="font-serif text-lg font-bold text-on-surface tracking-wide uppercase">THE CHAI STUDIO</span>
+              <span class="text-xs font-bold text-primary tracking-widest uppercase">CHAI ON CLICKS</span>
+            </div>
+          </div>
+          <p class="text-xs text-on-surface-variant italic">“BREWED FRESH. SERVED WITH LOVE.”</p>
+          <div class="flex items-center gap-2 text-xs text-on-surface-variant">
+            <span class="material-symbols-outlined text-primary text-[16px]">alternate_email</span>
+            <span class="hover:text-primary transition-colors">@thechaistudioindresh</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <h4 class="font-serif text-sm font-bold text-primary tracking-wider uppercase">Navigation</h4>
+          <div class="flex flex-col gap-2 text-xs text-on-surface-variant">
+            <a href="/index.html" class="hover:text-primary transition-colors">Artisanal Home</a>
+            <a href="/menu.html" class="hover:text-primary transition-colors text-primary font-bold">Official Studio Menu</a>
+            <a href="/story.html" class="hover:text-primary transition-colors">Our Heritage Story</a>
+            <a href="/about.html" class="hover:text-primary transition-colors">About The Studio</a>
+            <a href="/index.html#visit-contact" class="hover:text-primary transition-colors">Contact &amp; Directions</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <h4 class="font-serif text-sm font-bold text-primary tracking-wider uppercase">Opening Hours</h4>
+          <div class="flex flex-col gap-1.5 text-xs text-on-surface-variant">
+            <div class="flex justify-between"><span>Monday – Friday:</span><span class="text-white font-medium">07:00 AM – 11:00 PM</span></div>
+            <div class="flex justify-between"><span>Saturday – Sunday:</span><span class="text-white font-medium">08:00 AM – 12:00 AM</span></div>
+            <p class="text-primary text-[11px] pt-1 tracking-wider uppercase font-bold">Fresh Kadak Batches Every 15 Mins</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <h4 class="font-serif text-sm font-bold text-primary tracking-wider uppercase">The Studio</h4>
+          <div class="flex flex-col gap-1.5 text-xs text-on-surface-variant">
+            <div class="flex items-start gap-1.5">
+              <span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">location_on</span>
+              <span>LD Tower, Mothorwala Road, near Bangali Kothi Chowk, Banjarawala, Dehradun 248121</span>
+            </div>
+            <div class="flex items-center gap-1.5 mt-1">
+              <span class="material-symbols-outlined text-primary text-[16px] shrink-0">call</span>
+              <span>+91 (0) 11 4982 3310</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-outline/20 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant">
+        <p>© 2024 THE CHAI STUDIO — CHAI ON CLICKS. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/index.html" class="hover:text-primary transition-colors">Home</a>
+          <a href="/menu.html" class="hover:text-primary transition-colors">Full Menu</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=LD+Tower,+Mothorwala+Road,+near+Bangali+Kothi+Chowk,+Banjarawala,+Dehradun,+Uttarakhand+248121" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Dehradun Location</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE ORDER CUSTOMIZATION MODAL -->
+  <div id="order-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-heading">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-badge">Freshly Steamed</span>
+        <h3 id="modal-heading" class="modal-title">Craft Your Order</h3>
+        <p class="modal-subtitle">Direct from the samovar & kitchen to your table.</p>
+      </div>
+
+      <form id="order-form" class="modal-form">
+        <div class="form-group">
+          <label for="blend-select">Selected Item</label>
+          <select id="blend-select" required>
+            <option value="Chocolate Tea" data-price="35">Chocolate Tea (₹35)</option>
+            <option value="Adrak Tea" data-price="35">Adrak Tea (₹35)</option>
+            <option value="Rose Tea" data-price="35">Rose Tea (₹35)</option>
+            <option value="Kesar Tea" data-price="40">Kesar Tea (₹40)</option>
+            <option value="Elaichi Tea" data-price="40">Elaichi Tea (₹40)</option>
+            <option value="Masala Tea" data-price="40">Masala Tea (₹40)</option>
+            <option value="Pan Tea" data-price="40">Pan Tea (₹40)</option>
+            <option value="Mawa Tea" data-price="40">Mawa Tea (₹40)</option>
+            <option value="Lemon Tea" data-price="40">Lemon Tea (₹40)</option>
+            <option value="Classic Cold Coffee" data-price="90">Classic Cold Coffee (₹90)</option>
+            <option value="Choco Cold Coffee" data-price="100">Choco Cold Coffee (₹100)</option>
+            <option value="Strong Cold Coffee" data-price="110">Strong Cold Coffee (₹110)</option>
+            <option value="Cold Coffee with Ice Cream" data-price="120">Cold Coffee with Ice Cream (₹120)</option>
+            <option value="Brownie Cold Coffee" data-price="130">Brownie Cold Coffee (₹130)</option>
+            <option value="Hazelnut Creame Cold Coffee" data-price="150">Hazelnut Creame Cold Coffee (₹150)</option>
+            <option value="Irish Creame Cold Coffee" data-price="150">Irish Creame Cold Coffee (₹150)</option>
+            <option value="Caramel Creame Cold Coffee" data-price="160">Caramel Creame Cold Coffee (₹160)</option>
+            <option value="Hot Coffee" data-price="45">Hot Coffee (₹45)</option>
+            <option value="Strong Choco Coffee" data-price="60">Strong Choco Coffee (₹60)</option>
+            <option value="Hot Choclate" data-price="60">Hot Choclate (₹60)</option>
+            <option value="Red Wine Coffee (Flavoured)" data-price="60">Red Wine Coffee (Flavoured) (₹60)</option>
+            <option value="Whiskey Coffee (Flavoured)" data-price="60">Whiskey Coffee (Flavoured) (₹60)</option>
+            <option value="Plain Maggi" data-price="50">Plain Maggi (₹50)</option>
+            <option value="Double Masala Maggi" data-price="70">Double Masala Maggi (₹70)</option>
+            <option value="Schezwan Maggi" data-price="80">Schezwan Maggi (₹80)</option>
+            <option value="Tandoori Maggi" data-price="90">Tandoori Maggi (₹90)</option>
+            <option value="Vegetable Maggi" data-price="100">Vegetable Maggi (₹100)</option>
+            <option value="Corn Cheesey Maggi" data-price="120">Corn Cheesey Maggi (₹120)</option>
+            <option value="Cheese & Butter Maggi" data-price="130">Cheese & Butter Maggi (₹130)</option>
+            <option value="V Crispers" data-price="100">V Crispers (₹100)</option>
+            <option value="Cheesey Samosa" data-price="100">Cheesey Samosa (₹100)</option>
+            <option value="Garlic Pops" data-price="110">Garlic Pops (₹110)</option>
+            <option value="Potato Wedges" data-price="110">Potato Wedges (₹110)</option>
+            <option value="Veggie Nuggets" data-price="120">Veggie Nuggets (₹120)</option>
+            <option value="Chilli Cheesey Nuggets" data-price="140">Chilli Cheesey Nuggets (₹140)</option>
+            <option value="Margherita Pizza" data-price="120">Margherita Pizza (₹120)</option>
+            <option value="Veggie Paradise Pizza" data-price="140">Veggie Paradise Pizza (₹140)</option>
+            <option value="Golden Corn Pizza" data-price="150">Golden Corn Pizza (₹150)</option>
+            <option value="Veggie Farmhouse Pizza" data-price="200">Veggie Farmhouse Pizza (₹200)</option>
+            <option value="Tandoori Paneer Pizza" data-price="230">Tandoori Paneer Pizza (₹230)</option>
+            <option value="Makhni Mushroom Pizza" data-price="250">Makhni Mushroom Pizza (₹250)</option>
+            <option value="Studios Special Pizza" data-price="300">Studios Special Pizza (₹300)</option>
+            <option value="Veg Burger" data-price="70">Veg Burger (₹70)</option>
+            <option value="Veg Cheese Burger" data-price="90">Veg Cheese Burger (₹90)</option>
+            <option value="Paneer Delight Burger" data-price="100">Paneer Delight Burger (₹100)</option>
+            <option value="Cheese Paneer Burger" data-price="110">Cheese Paneer Burger (₹110)</option>
+            <option value="Spicy Tandoori Burger" data-price="120">Spicy Tandoori Burger (₹120)</option>
+            <option value="Maska Bun" data-price="35">Maska Bun (₹35)</option>
+            <option value="Garlic Bun" data-price="40">Garlic Bun (₹40)</option>
+            <option value="Plain Garlic Bread" data-price="50">Plain Garlic Bread (₹50)</option>
+            <option value="Cheese Garlic Bread" data-price="70">Cheese Garlic Bread (₹70)</option>
+            <option value="French Fries" data-price="70">French Fries (₹70)</option>
+            <option value="Peri Peri Fries" data-price="80">Peri Peri Fries (₹80)</option>
+            <option value="Loaded Fries" data-price="160">Loaded Fries (₹160)</option>
+            <option value="Fruit Butter Sandwich" data-price="60">Fruit Butter Sandwich (₹60)</option>
+            <option value="Choco Grill Sandwich" data-price="70">Choco Grill Sandwich (₹70)</option>
+            <option value="Veggie Paradise Sandwich" data-price="80">Veggie Paradise Sandwich (₹80)</option>
+            <option value="Chilli Cheese Sandwich" data-price="85">Chilli Cheese Sandwich (₹85)</option>
+            <option value="Paneer Tikka Sandwich" data-price="100">Paneer Tikka Sandwich (₹100)</option>
+            <option value="Vanilla Shake" data-price="100">Vanilla Shake (₹100)</option>
+            <option value="Strawberry Shake" data-price="100">Strawberry Shake (₹100)</option>
+            <option value="Butter Scotch Shake" data-price="110">Butter Scotch Shake (₹110)</option>
+            <option value="Oreo Shake" data-price="120">Oreo Shake (₹120)</option>
+            <option value="Kit Kat Shake" data-price="120">Kit Kat Shake (₹120)</option>
+            <option value="Dairy Milk Shake" data-price="120">Dairy Milk Shake (₹120)</option>
+            <option value="Rasmalai Shake" data-price="130">Rasmalai Shake (₹130)</option>
+            <option value="Blueberry Cream Shake" data-price="140">Blueberry Cream Shake (₹140)</option>
+            <option value="Blueberry Slush" data-price="90">Blueberry Slush (₹90)</option>
+            <option value="Black Current Slush" data-price="90">Black Current Slush (₹90)</option>
+            <option value="Virgin Mojito" data-price="130">Virgin Mojito (₹130)</option>
+            <option value="Blue Lagoon" data-price="140">Blue Lagoon (₹140)</option>
+            <option value="Kala Khatta Gola Mocktail" data-price="160">Kala Khatta Gola Mocktail (₹160)</option>
+            <option value="Paan Patta Mojito" data-price="170">Paan Patta Mojito (₹170)</option>
+            <option value="Veg Momos" data-price="70">Veg Momos (₹70)</option>
+            <option value="Paneer Momos" data-price="90">Paneer Momos (₹90)</option>
+            <option value="Veg Fried Momos" data-price="80">Veg Fried Momos (₹80)</option>
+            <option value="Paneer Fried Momos" data-price="100">Paneer Fried Momos (₹100)</option>
+            <option value="Spring Rolls" data-price="100">Spring Rolls (₹100)</option>
+            <option value="Hot Choco Brownie" data-price="70">Hot Choco Brownie (₹70)</option>
+            <option value="Brownie with Ice Cream" data-price="100">Brownie with Ice Cream (₹100)</option>
+            <option value="Corn Chat (Healthy Feast)" data-price="80">Corn Chat (Healthy Feast) (₹80)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sweetness-level">Special Request</label>
+            <select id="sweetness-level">
+              <option value="Classic Recipe">Classic Recipe</option>
+              <option value="Extra Kadak / Spiced">Extra Kadak / Spiced</option>
+              <option value="Fika / Less Sugar">Fika / Less Sugar</option>
+              <option value="Extra Cheese / Butter">Extra Cheese / Butter (+₹15)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cup-qty">Quantity</label>
+            <div class="qty-control">
+              <button type="button" id="qty-minus" class="qty-btn">-</button>
+              <input type="number" id="cup-qty" value="1" min="1" max="20" readonly />
+              <button type="button" id="qty-plus" class="qty-btn">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cust-name">Your Name</label>
+          <input type="text" id="cust-name" placeholder="e.g. Shivanshi" required />
+        </div>
+
+        <div class="form-group">
+          <label for="cust-phone">Contact / Table No.</label>
+          <input type="text" id="cust-phone" placeholder="e.g. Table 4 or +91 98765 43210" required />
+        </div>
+
+        <div class="order-summary-box">
+          <div class="summary-line">
+            <span>Price Per Item</span>
+            <span id="summary-unit-price">₹40</span>
+          </div>
+          <div class="summary-line total">
+            <span>Estimated Total</span>
+            <span id="summary-total-price">₹40</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary w-full">Confirm Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ORDER SUCCESS TOAST -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <span class="material-symbols-outlined text-primary text-[24px]">check_circle</span>
+    <div class="toast-body">
+      <h4 class="toast-title" id="toast-title">Order Confirmed!</h4>
+      <p class="toast-msg" id="toast-msg">The samovar is steaming. Your order is brewing fresh.</p>
+    </div>
+  </div>
+
+  <script type="module" src="./menu.js"></script>
+</body>
+</html>
